@@ -42,5 +42,27 @@ def estimateEmission(filePath, k=3):
                 estimates[tag][observation] = float(observations[tag][observation])/tags[tag]
     
     return estimates
-                                        
-print estimateEmission(filePath)
+
+
+def sentimentAnalysis(inputPath, estimates, outputPath='dev.p2.out'):
+    f = open(outputPath, 'w')
+    for line in open(inputPath, 'r'):
+        observation = line.rstrip()
+        if observation:
+            prediction = ('',0.0) # prediction is tuple of tag and the MLE of observation for the given tag
+            for tag in estimates:
+                if observation in estimates[tag] and estimates[tag][observation]>prediction[1]:
+                    prediction = (tag,estimates[tag][observation])
+            if prediction[0]:
+                f.write('%s %s\n'%(observation,prediction[0]))
+            else:
+                f.write('#UNK#\n')
+        else:
+            f.write('\n')
+        
+    print 'Finished writing to file %s...' % (outputPath)
+    return f.close()
+    
+        
+estimates = estimateEmission(filePath)
+sentimentAnalysis('../EN/dev.in',estimates)
