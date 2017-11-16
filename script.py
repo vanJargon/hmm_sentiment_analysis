@@ -8,8 +8,8 @@ Created on Thu Nov 16 23:21:14 2017
 filePath = '../EN/train'
 #filePath = '../FR/train'
 
-# Part 2(a)
-def estimateEmission(filePath):
+# Part 2
+def estimateEmission(filePath, k=3):
     tags = {}
     observations = {}
     estimates = {}
@@ -32,13 +32,14 @@ def estimateEmission(filePath):
                 if observation not in observations[tag]:
                     observations[tag][observation] = 1
                 else:
-                    observations[tag][observation] += 1
-         
-    # Compute the MLE based on the count data
+                    observations[tag][observation] += 1                        
+
+    # Compute the MLE based on the count data, counting only emissions which appeared for k or more times
     for tag in tags:
         estimates[tag] = {}
         for observation in observations[tag]:
-            estimates[tag][observation] = float(observations[tag][observation])/tags[tag]
+            if observations[tag][observation] >= k:
+                estimates[tag][observation] = float(observations[tag][observation])/tags[tag]
     
     return estimates
                                         
