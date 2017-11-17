@@ -44,7 +44,7 @@ def estimateEmission(filePath, k=3):
     return estimates
 
 
-def sentimentAnalysis(inputPath, estimates, outputPath='dev.p2.out'):
+def sentimentAnalysis(inputPath, estimates, outputPath='../EN/dev.p2.out'):
     f = open(outputPath, 'w')
     for line in open(inputPath, 'r'):
         observation = line.rstrip()
@@ -56,7 +56,7 @@ def sentimentAnalysis(inputPath, estimates, outputPath='dev.p2.out'):
             if prediction[0]:
                 f.write('%s %s\n'%(observation,prediction[0]))
             else:
-                f.write('#UNK#\n')
+                f.write('##UNK##\n')
         else:
             f.write('\n')
         
