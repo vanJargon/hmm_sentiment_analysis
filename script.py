@@ -5,8 +5,14 @@ Created on Thu Nov 16 23:21:14 2017
 
 @author: 1001827
 """
-filePath = '../EN/train'
-#filePath = '../FR/train'
+dataset = 'EN'
+#dataset = 'FR'
+#dataset = 'CN'
+#dataset = 'SG'
+
+trainFilePath = '../%s/train' % (dataset)
+inputTestFilePath = '../%s/dev.in' % (dataset)
+outputTestFilePath = '../%s/dev.p2.out' % (dataset)
 
 # Part 2
 def estimateEmission(filePath, k=3):
@@ -44,7 +50,7 @@ def estimateEmission(filePath, k=3):
     return estimates
 
 
-def sentimentAnalysis(inputPath, estimates, outputPath='../EN/dev.p2.out'):
+def sentimentAnalysis(inputPath, estimates, outputPath):
     f = open(outputPath, 'w')
     for line in open(inputPath, 'r'):
         observation = line.rstrip()
@@ -64,5 +70,5 @@ def sentimentAnalysis(inputPath, estimates, outputPath='../EN/dev.p2.out'):
     return f.close()
     
         
-estimates = estimateEmission(filePath)
-sentimentAnalysis('../EN/dev.in',estimates)
+estimates = estimateEmission(trainFilePath)
+sentimentAnalysis(inputTestFilePath,estimates,outputTestFilePath)
