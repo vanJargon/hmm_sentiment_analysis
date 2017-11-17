@@ -17,3 +17,18 @@ Correct Sentiment : 16
 Sentiment  precision: 0.0461
 Sentiment  recall: 0.0708
 Sentiment  F: 0.0558
+
+#### Test Results for FR: ####
+Entity in gold data: 223
+Entity in prediction: 53
+
+Correct Entity : 5
+Entity  precision: 0.0943
+Entity  recall: 0.0224
+Entity  F: 0.0362
+
+Correct Sentiment : 2
+Sentiment  precision: 0.0377
+Sentiment  recall: 0.0090
+Sentiment  F: 0.0145
+
