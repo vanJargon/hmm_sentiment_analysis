@@ -6,56 +6,56 @@ Part 2
 ------
 #### Test Results for EN: ####
 Entity in gold data: 226
-Entity in prediction: 347
+Entity in prediction: 701
 
-Correct Entity : 69
-Entity  precision: 0.1988
-Entity  recall: 0.3053
-Entity  F: 0.2408
+Correct Entity : 89
+Entity  precision: 0.1270
+Entity  recall: 0.3938
+Entity  F: 0.1920
 
-Correct Sentiment : 16
-Sentiment  precision: 0.0461
-Sentiment  recall: 0.0708
-Sentiment  F: 0.0558
+Correct Sentiment : 21
+Sentiment  precision: 0.0300
+Sentiment  recall: 0.0929
+Sentiment  F: 0.0453
 
 #### Test Results for FR: ####
 Entity in gold data: 223
-Entity in prediction: 525
+Entity in prediction: 712
 
-Correct Entity : 90
-Entity  precision: 0.1714
-Entity  recall: 0.4036
-Entity  F: 0.2406
+Correct Entity : 104
+Entity  precision: 0.1461
+Entity  recall: 0.4664
+Entity  F: 0.2225
 
-Correct Sentiment : 40
-Sentiment  precision: 0.0762
-Sentiment  recall: 0.1794
-Sentiment  F: 0.1070
+Correct Sentiment : 38
+Sentiment  precision: 0.0534
+Sentiment  recall: 0.1704
+Sentiment  F: 0.0813
 
 #### Test Results for CN: ####
-Entity in gold data: 362
-Entity in prediction: 918
+Entity in gold data: 223
+Entity in prediction: 712
 
-Correct Entity : 45
-Entity  precision: 0.0490
-Entity  recall: 0.1243
-Entity  F: 0.0703
+Correct Entity : 104
+Entity  precision: 0.1461
+Entity  recall: 0.4664
+Entity  F: 0.2225
 
-Correct Sentiment : 23
-Sentiment  precision: 0.0251
-Sentiment  recall: 0.0635
-Sentiment  F: 0.0359
+Correct Sentiment : 38
+Sentiment  precision: 0.0534
+Sentiment  recall: 0.1704
+Sentiment  F: 0.0813
 
 #### Test Results for SG: ####
 Entity in gold data: 1382
-Entity in prediction: 1745
+Entity in prediction: 2533
 
-Correct Entity : 171
-Entity  precision: 0.0980
-Entity  recall: 0.1237
-Entity  F: 0.1094
+Correct Entity : 215
+Entity  precision: 0.0849
+Entity  recall: 0.1556
+Entity  F: 0.1098
 
-Correct Sentiment : 89
-Sentiment  precision: 0.0510
-Sentiment  recall: 0.0644
-Sentiment  F: 0.0569
+Correct Sentiment : 101
+Sentiment  precision: 0.0399
+Sentiment  recall: 0.0731
+Sentiment  F: 0.0516
