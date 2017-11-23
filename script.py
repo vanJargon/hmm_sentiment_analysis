@@ -5,10 +5,10 @@ Created on Thu Nov 16 23:21:14 2017
 
 @author: 1001827
 """
-# dataset = 'EN'
+dataset = 'EN'
 # dataset = 'FR'
 # dataset = 'CN'
-dataset = 'SG'
+# dataset = 'SG'
 
 trainFilePath = '../%s/train' % (dataset)
 inputTestFilePath = '../%s/dev.in' % (dataset)
@@ -58,15 +58,6 @@ def estimateEmission(filePath, k=3):
             else:  # compute the MLE for that emission
                 estimates[tag][observation] = float(l_Observations[tag][observation]) / tags[tag]
         estimates[tag]['##UNK##'] = float(l_Observations[tag]['##UNK##']) / tags[tag]
-        print tag
-        print estimates[tag]['##UNK##']
-
-    # Compute the MLE based on the count data and the number of times the observation appears in training data
-    # for tag in tags:
-    #     estimates[tag] = {}
-    #     for observation in l_Observations[tag]:
-    #         if observations[observation] >= k:
-    #             estimates[tag][observation] = float(l_Observations[tag][observation]) / tags[tag]
 
     # print tags
     # print observations
