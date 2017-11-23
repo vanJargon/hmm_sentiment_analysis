@@ -6,56 +6,56 @@ Part 2
 ------
 #### Test Results for EN: ####
 Entity in gold data: 226
-Entity in prediction: 701
+Entity in prediction: 1201
 
-Correct Entity : 89
-Entity  precision: 0.1270
-Entity  recall: 0.3938
-Entity  F: 0.1920
+Correct Entity : 165
+Entity  precision: 0.1374
+Entity  recall: 0.7301
+Entity  F: 0.2313
 
-Correct Sentiment : 21
-Sentiment  precision: 0.0300
-Sentiment  recall: 0.0929
-Sentiment  F: 0.0453
+Correct Sentiment : 71
+Sentiment  precision: 0.0591
+Sentiment  recall: 0.3142
+Sentiment  F: 0.0995
 
 #### Test Results for FR: ####
 Entity in gold data: 223
-Entity in prediction: 712
+Entity in prediction: 1149
 
-Correct Entity : 104
-Entity  precision: 0.1461
-Entity  recall: 0.4664
-Entity  F: 0.2225
+Correct Entity : 182
+Entity  precision: 0.1584
+Entity  recall: 0.8161
+Entity  F: 0.2653
 
-Correct Sentiment : 38
-Sentiment  precision: 0.0534
-Sentiment  recall: 0.1704
-Sentiment  F: 0.0813
+Correct Sentiment : 68
+Sentiment  precision: 0.0592
+Sentiment  recall: 0.3049
+Sentiment  F: 0.0991
 
 #### Test Results for CN: ####
 Entity in gold data: 362
-Entity in prediction: 1669
+Entity in prediction: 3318
 
-Correct Entity : 74
-Entity  precision: 0.0443
-Entity  recall: 0.2044
-Entity  F: 0.0729
+Correct Entity : 183
+Entity  precision: 0.0552
+Entity  recall: 0.5055
+Entity  F: 0.0995
 
-Correct Sentiment : 31
-Sentiment  precision: 0.0186
-Sentiment  recall: 0.0856
-Sentiment  F: 0.0305
+Correct Sentiment : 57
+Sentiment  precision: 0.0172
+Sentiment  recall: 0.1575
+Sentiment  F: 0.0310
 
 #### Test Results for SG: ####
 Entity in gold data: 1382
-Entity in prediction: 2543
+Entity in prediction: 6599
 
-Correct Entity : 211
-Entity  precision: 0.0830
-Entity  recall: 0.1527
-Entity  F: 0.1075
+Correct Entity : 794
+Entity  precision: 0.1203
+Entity  recall: 0.5745
+Entity  F: 0.1990
 
-Correct Sentiment : 97
-Sentiment  precision: 0.0381
-Sentiment  recall: 0.0702
-Sentiment  F: 0.0494
+Correct Sentiment : 315
+Sentiment  precision: 0.0477
+Sentiment  recall: 0.2279
+Sentiment  F: 0.0789

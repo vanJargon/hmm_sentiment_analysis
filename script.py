@@ -5,10 +5,10 @@ Created on Thu Nov 16 23:21:14 2017
 
 @author: 1001827
 """
-dataset = 'EN'
+# dataset = 'EN'
 # dataset = 'FR'
 # dataset = 'CN'
-# dataset = 'SG'
+dataset = 'SG'
 
 trainFilePath = '../%s/train' % (dataset)
 inputTestFilePath = '../%s/dev.in' % (dataset)
@@ -47,12 +47,26 @@ def estimateEmission(filePath, k=3):
                 else:
                     l_Observations[tag][observation] += 1
 
-    # Compute the MLE based on the count data and the number of times the observation appears in training data
-    for tag in tags:
+    # Compute the MLE for observations which appeared more than k times and for ##UNK##
+    for tag in l_Observations:
         estimates[tag] = {}
-        for observation in l_Observations[tag]:
-            if observations[observation] >= k:
+        l_Observations[tag]['##UNK##'] = 0
+        for observation in list(l_Observations[tag]):  # loop over all keys in l_Observations
+            if observation == '##UNK##': continue
+            if observations[observation] < k:  # replace observations that appear less than k times with ##UNK##
+                l_Observations[tag]['##UNK##'] += l_Observations[tag].pop(observation)
+            else:  # compute the MLE for that emission
                 estimates[tag][observation] = float(l_Observations[tag][observation]) / tags[tag]
+        estimates[tag]['##UNK##'] = float(l_Observations[tag]['##UNK##']) / tags[tag]
+        print tag
+        print estimates[tag]['##UNK##']
+
+    # Compute the MLE based on the count data and the number of times the observation appears in training data
+    # for tag in tags:
+    #     estimates[tag] = {}
+    #     for observation in l_Observations[tag]:
+    #         if observations[observation] >= k:
+    #             estimates[tag][observation] = float(l_Observations[tag][observation]) / tags[tag]
 
     # print tags
     # print observations
@@ -63,6 +77,14 @@ def estimateEmission(filePath, k=3):
 
 def sentimentAnalysis(inputPath, estimates, outputPath):
     f = open(outputPath, 'w')
+
+    # For some reason we need to tag ##UNK## too
+    # Get the most likely tag emitted for special token ##UNK##
+    unkPrediction = ('##UNK##', 0.0)
+    for tag in estimates:
+        if estimates[tag]['##UNK##'] > unkPrediction[1]:
+            unkPrediction = (tag, estimates[tag]['##UNK##'])
+
     for line in open(inputPath, 'r'):
         observation = line.rstrip()
         if observation:
@@ -73,11 +95,11 @@ def sentimentAnalysis(inputPath, estimates, outputPath):
             if prediction[0]:
                 f.write('%s %s\n' % (observation, prediction[0]))
             else:
-                f.write('##UNK##\n')
+                f.write('%s %s\n' % (observation, unkPrediction[0]))
         else:
             f.write('\n')
 
-    print 'Finished writing to file %s...' % (outputPath)
+    print 'Finished writing to file %s' % (outputPath)
     return f.close()
 
 
