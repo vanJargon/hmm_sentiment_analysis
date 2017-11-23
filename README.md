@@ -33,29 +33,29 @@ Sentiment  recall: 0.1704
 Sentiment  F: 0.0813
 
 #### Test Results for CN: ####
-Entity in gold data: 223
-Entity in prediction: 712
+Entity in gold data: 362
+Entity in prediction: 1669
 
-Correct Entity : 104
-Entity  precision: 0.1461
-Entity  recall: 0.4664
-Entity  F: 0.2225
+Correct Entity : 74
+Entity  precision: 0.0443
+Entity  recall: 0.2044
+Entity  F: 0.0729
 
-Correct Sentiment : 38
-Sentiment  precision: 0.0534
-Sentiment  recall: 0.1704
-Sentiment  F: 0.0813
+Correct Sentiment : 31
+Sentiment  precision: 0.0186
+Sentiment  recall: 0.0856
+Sentiment  F: 0.0305
 
 #### Test Results for SG: ####
 Entity in gold data: 1382
-Entity in prediction: 2533
+Entity in prediction: 2543
 
-Correct Entity : 215
-Entity  precision: 0.0849
-Entity  recall: 0.1556
-Entity  F: 0.1098
+Correct Entity : 211
+Entity  precision: 0.0830
+Entity  recall: 0.1527
+Entity  F: 0.1075
 
-Correct Sentiment : 101
-Sentiment  precision: 0.0399
-Sentiment  recall: 0.0731
-Sentiment  F: 0.0516
+Correct Sentiment : 97
+Sentiment  precision: 0.0381
+Sentiment  recall: 0.0702
+Sentiment  F: 0.0494

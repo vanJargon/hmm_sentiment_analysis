@@ -5,10 +5,10 @@ Created on Thu Nov 16 23:21:14 2017
 
 @author: 1001827
 """
-# dataset = 'EN'
+dataset = 'EN'
 # dataset = 'FR'
 # dataset = 'CN'
-dataset = 'SG'
+# dataset = 'SG'
 
 trainFilePath = '../%s/train' % (dataset)
 inputTestFilePath = '../%s/dev.in' % (dataset)
@@ -26,7 +26,7 @@ def estimateEmission(filePath, k=3):
     for line in open(filePath, 'r'):
         segmentedLine = line.rstrip()
         if segmentedLine:  # if its not just an empty string
-            segmentedLine = segmentedLine.split(' ')
+            segmentedLine = segmentedLine.rsplit(' ', 1)
 
             observation = segmentedLine[0]  # X
             tag = segmentedLine[1]  # Y
@@ -53,6 +53,11 @@ def estimateEmission(filePath, k=3):
         for observation in l_Observations[tag]:
             if observations[observation] >= k:
                 estimates[tag][observation] = float(l_Observations[tag][observation]) / tags[tag]
+
+    # print tags
+    # print observations
+    # print l_Observations
+    # print estimates
     return estimates
 
 
