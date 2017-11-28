@@ -53,8 +53,11 @@ def estimateEmission(filePath, k=3):
         l_Observations[tag]['##UNK##'] = 0
         for observation in list(l_Observations[tag]):  # loop over all keys in l_Observations
             if observation == '##UNK##': continue
-            if observations[observation] < k:  # replace observations that appear less than k times with ##UNK##
+            if observation not in observations:  # if this observation has been found to appear less than k times before
                 l_Observations[tag]['##UNK##'] += l_Observations[tag].pop(observation)
+            elif observations[observation] < k:  # if first meet an observation that appear less than k times
+                l_Observations[tag]['##UNK##'] += l_Observations[tag].pop(observation)
+                del observations[observation]
             else:  # compute the MLE for that emission
                 estimates[tag][observation] = float(l_Observations[tag][observation]) / tags[tag]
         estimates[tag]['##UNK##'] = float(l_Observations[tag]['##UNK##']) / tags[tag]
@@ -63,7 +66,7 @@ def estimateEmission(filePath, k=3):
     # print observations
     # print l_Observations
     # print estimates
-    return estimates
+    return list(observations), estimates
 
 
 def sentimentAnalysis(inputPath, estimates, outputPath):
@@ -94,5 +97,5 @@ def sentimentAnalysis(inputPath, estimates, outputPath):
     return f.close()
 
 
-estimates = estimateEmission(trainFilePath)
+m_training, estimates = estimateEmission(trainFilePath)
 sentimentAnalysis(inputTestFilePath, estimates, outputTestFilePath)
