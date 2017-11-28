@@ -1,4 +1,4 @@
-#English Results
+####English Results####
 
 #Entity in gold data: 226
 #Entity in prediction: 556
@@ -13,7 +13,7 @@ Sentiment  precision: 0.1727
 Sentiment  recall: 0.4248
 Sentiment  F: 0.2455
 
-#SG Results
+####SG Results####
 #Entity in gold data: 1382
 #Entity in prediction: 2314
 
@@ -27,7 +27,7 @@ Sentiment  precision: 0.1422
 Sentiment  recall: 0.2381
 Sentiment  F: 0.1780
 
-#Chinese Results
+####French Results####
 #Entity in gold data: 223
 #Entity in prediction: 504
 
@@ -41,7 +41,7 @@ Sentiment  precision: 0.1905
 Sentiment  recall: 0.4305
 Sentiment  F: 0.2641
 
-#Chinese Results
+####Chinese Results####
 #Entity in gold data: 362
 #Entity in prediction: 851
 
