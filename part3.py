@@ -137,7 +137,6 @@ def viterbi(observationSequence, m_training, emissionEstimates, transitionEstima
     for c_tag in tags:
         if c_tag not in transitionEstimates['##START##']: continue  # update tags which can be transitioned from ##START##
 
-        emission = 0.0
         if observationSequence[0] in m_training:  # if this word is not ##UNK##
             if observationSequence[0] in emissionEstimates[c_tag]:  # and this emission can be found
                 emission = emissionEstimates[c_tag][observationSequence[0]]
@@ -158,7 +157,6 @@ def viterbi(observationSequence, m_training, emissionEstimates, transitionEstima
                 if score > pi[k][c_tag][0]:
                     pi[k][c_tag] = [score, p_tag]
 
-            emission = 0.0
             if observationSequence[k] in m_training:  # if this word is not ##UNK##
                 if observationSequence[k] in emissionEstimates[c_tag]:  # and this emission can be found
                     emission = emissionEstimates[c_tag][observationSequence[k]]
@@ -190,5 +188,5 @@ def viterbi(observationSequence, m_training, emissionEstimates, transitionEstima
     return prediction
 
 transitionEstimates = estimateTransition(trainFilePath)
-m_training, emissionEstimates = estimateEmission(trainFilePath, 3)
+m_training, emissionEstimates = estimateEmission(trainFilePath)
 sentimentAnalysis(inputTestFilePath, m_training, emissionEstimates, transitionEstimates, outputTestFilePath)
