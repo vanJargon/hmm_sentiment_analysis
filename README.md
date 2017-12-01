@@ -147,3 +147,38 @@ Correct Sentiment : 73
 Sentiment  precision: 0.4220
 Sentiment  recall: 0.3274
 Sentiment  F: 0.3687
+
+Part 5
+------
+Improvement of Viterbi algorithm (Part 3).
+
+### Modifications made: ###
+- Conversion of observations to lowercase in learning and testing phase
+
+#### Test Results for EN: ####
+Entity in gold data: 226
+Entity in prediction: 168
+
+Correct Entity : 106
+Entity  precision: 0.6310
+Entity  recall: 0.4690
+Entity  F: 0.5381
+
+Correct Sentiment : 65
+Sentiment  precision: 0.3869
+Sentiment  recall: 0.2876
+Sentiment  F: 0.3299
+
+#### Test Results for FR: ####
+Entity in gold data: 223
+Entity in prediction: 173
+
+Correct Entity : 116
+Entity  precision: 0.6705
+Entity  recall: 0.5202
+Entity  F: 0.5859
+
+Correct Sentiment : 80
+Sentiment  precision: 0.4624
+Sentiment  recall: 0.3587
+Sentiment  F: 0.4040
