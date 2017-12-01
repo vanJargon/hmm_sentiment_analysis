@@ -117,3 +117,33 @@ Correct Sentiment : 244
 Sentiment  precision: 0.3375
 Sentiment  recall: 0.1766
 Sentiment  F: 0.2318
+
+Part 4
+------
+#### Test Results for EN: ####
+Entity in gold data: 226
+Entity in prediction: 175
+
+Correct Entity : 108
+Entity  precision: 0.6171
+Entity  recall: 0.4779
+Entity  F: 0.5387
+
+Correct Sentiment : 69
+Sentiment  precision: 0.3943
+Sentiment  recall: 0.3053
+Sentiment  F: 0.3441
+
+#### Test Results for FR: ####
+Entity in gold data: 223
+Entity in prediction: 173
+
+Correct Entity : 113
+Entity  precision: 0.6532
+Entity  recall: 0.5067
+Entity  F: 0.5707
+
+Correct Sentiment : 73
+Sentiment  precision: 0.4220
+Sentiment  recall: 0.3274
+Sentiment  F: 0.3687

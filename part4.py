@@ -115,21 +115,17 @@ def sentimentAnalysis(inputPath, m_training, emissionEstimates, transitionEstima
             observationSequence.append(observation)
         else:
             predictionSequence = maxMarginal(observationSequence, m_training, emissionEstimates, transitionEstimates)
-            print observationSequence
-            print predictionSequence
-            print '\n'
-            break
             for i in range(len(observationSequence)):
                 if predictionSequence:
                     f.write('%s %s\n' % (observationSequence[i], predictionSequence[i]))
                 else:  # for those rare cases where the final probability is all 0
                     f.write('%s O\n' % observationSequence[i])
 
-    #         f.write('\n')
-    #         observationSequence = []
-    #
-    # print 'Finished writing to file %s' % (outputPath)
-    # return f.close()
+            f.write('\n')
+            observationSequence = []
+
+    print 'Finished writing to file %s' % (outputPath)
+    return f.close()
 
 def maxMarginal(observationSequence, m_training, emissionEstimates, transitionEstimates):
     """ Max-Marginal Decoding with Forward-backward """
@@ -137,7 +133,7 @@ def maxMarginal(observationSequence, m_training, emissionEstimates, transitionEs
 
     def getAlpha():
         """ Finds the values of alpha"""
-        values = [{tag:0.0 for tag in list(emissionEstimates)} for o in observationSequence]
+        values = [{tag:0.0 for tag in tags} for o in observationSequence]
 
         # Base case
         for c_tag in tags:
@@ -163,7 +159,7 @@ def maxMarginal(observationSequence, m_training, emissionEstimates, transitionEs
 
     def getBeta():
         """ Finds the values of beta """
-        values = [{tag: 0.0 for tag in list(emissionEstimates)} for o in observationSequence]
+        values = [{tag: 0.0 for tag in tags} for o in observationSequence]
 
         # Base case
         for p_tag in tags:
@@ -182,15 +178,14 @@ def maxMarginal(observationSequence, m_training, emissionEstimates, transitionEs
             for p_tag in tags:
                 for c_tag in tags:
                     if c_tag not in transitionEstimates[p_tag]: continue  # only add to sum c_tags which can be transitioned from this p_tag
-                    values[j][p_tag] += values[j + 1][c_tag] * transitionEstimates[p_tag][c_tag]
 
-                if observationSequence[j] in m_training:  # if this word is not ##UNK##
-                    if observationSequence[j] not in emissionEstimates[p_tag]: continue  # move to next p_tag if this emission cannot be found
+                    if observationSequence[j] in m_training:  # if this word is not ##UNK##
+                        if observationSequence[j] not in emissionEstimates[p_tag]: continue  # move to next p_tag if this emission cannot be found
 
-                    # include emission probability if this emission can be found!
-                    values[j][p_tag] *= emissionEstimates[p_tag][observationSequence[j]]
-                else:  # if this is ##UNK##
-                    values[j][p_tag] *= emissionEstimates[p_tag]['##UNK##']
+                        # include emission probability if this emission can be found!
+                        values[j][p_tag] += values[j + 1][c_tag] * transitionEstimates[p_tag][c_tag] * emissionEstimates[p_tag][observationSequence[j]]
+                    else:  # if this is ##UNK##
+                        values[j][p_tag] += values[j + 1][c_tag] * transitionEstimates[p_tag][c_tag] * emissionEstimates[p_tag]['##UNK##']
 
         return values
 
@@ -198,18 +193,15 @@ def maxMarginal(observationSequence, m_training, emissionEstimates, transitionEs
     alphas = getAlpha()
     betas = getBeta()
 
-    # print alphas
-    # print betas
-
-    # DEBUG
-    print '[DEBUG UTIL]'
-    for j in range(len(observationSequence)):
-        print observationSequence[j]
-        sum = 0.0
-        for tag in tags:
-            sum += alphas[j][tag] * betas[j][tag]
-        print sum
-    print '\n'
+    ## DEBUG
+    # print '\n[DEBUG UTIL] All values displayed should be equal!'
+    # for j in range(len(observationSequence)):
+    #     print observationSequence[j]
+    #     sum = 0.0
+    #     for tag in tags:
+    #         sum += alphas[j][tag] * betas[j][tag]
+    #     print sum
+    # print '\n'
 
     # After initializing, just use alphas and betas to make the prediction
     prediction = []
@@ -223,9 +215,5 @@ def maxMarginal(observationSequence, m_training, emissionEstimates, transitionEs
     return prediction
 
 transitionEstimates = estimateTransition(trainFilePath)
-# print transitionEstimates
 m_training, emissionEstimates = estimateEmission(trainFilePath)
-# print m_training
-# print emissionEstimates
 sentimentAnalysis(inputTestFilePath, m_training, emissionEstimates, transitionEstimates, outputTestFilePath)
-
