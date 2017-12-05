@@ -195,7 +195,7 @@ def viterbi(observationSequence, m_training, emissionFeatures, transitionFeature
     return prediction
 
 
-def trainModel(filePath, m_training, emissionFeatures, transitionFeatures, numIters=20):
+def trainModel(filePath, m_training, emissionFeatures, transitionFeatures, numIters=13):
     """ trains the model according to the structured perceptron algorithm """
     tags = list(emissionFeatures)
     n = 0  # number of instances in training (nT)

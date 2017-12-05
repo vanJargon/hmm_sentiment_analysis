@@ -150,51 +150,37 @@ Sentiment  F: 0.3687
 
 Part 5
 ------
-Improvement of Viterbi algorithm (Part 3).
+Implementation of Structured Perceptron algorithm.
+- Parameters used (EN): 10 (numIters)
+- Parameters used (FR): 10 (numIters)
 
-### Modifications made: ###
+### Additional Modifications: ###
 - Conversion of observations to lowercase in learning and testing phase
-- Implementation of Structured Perceptron algorithm instead of HMM
 
 #### Test Results for EN: ####
 Entity in gold data: 226
-Entity in prediction: 306
+Entity in prediction: 304
 
-Correct Entity : 142
-Entity  precision: 0.4641
-Entity  recall: 0.6283
-Entity  F: 0.5338
+Correct Entity : 150
+Entity  precision: 0.4934
+Entity  recall: 0.6637
+Entity  F: 0.5660
 
-Correct Sentiment : 71
-Sentiment  precision: 0.2320
-Sentiment  recall: 0.3142
-Sentiment  F: 0.2669
+Correct Sentiment : 85
+Sentiment  precision: 0.2796
+Sentiment  recall: 0.3761
+Sentiment  F: 0.3208
 
 #### Test Results for FR: ####
 Entity in gold data: 223
-Entity in prediction: 93
+Entity in prediction: 228
 
-Correct Entity : 70
-Entity  precision: 0.7527
-Entity  recall: 0.3139
-Entity  F: 0.4430
+Correct Entity : 151
+Entity  precision: 0.6623
+Entity  recall: 0.6771
+Entity  F: 0.6696
 
-Correct Sentiment : 45
-Sentiment  precision: 0.4839
-Sentiment  recall: 0.2018
-Sentiment  F: 0.2848
-
-#### Test Results for CN: ####
-Entity in gold data: 362
-Entity in prediction: 581
-
-Correct Entity : 143
-Entity  precision: 0.2461
-Entity  recall: 0.3950
-Entity  F: 0.3033
-
-Correct Sentiment : 96
-Sentiment  precision: 0.1652
-Sentiment  recall: 0.2652
-Sentiment  F: 0.2036
-
+Correct Sentiment : 100
+Sentiment  precision: 0.4386
+Sentiment  recall: 0.4484
+Sentiment  F: 0.4435
