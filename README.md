@@ -151,36 +151,37 @@ Sentiment  F: 0.3687
 Part 5
 ------
 Implementation of Structured Perceptron algorithm.
-- Parameters used (EN): 10 (numIters)
-- Parameters used (FR): 10 (numIters)
+- Parameters used (EN): 12 (numIters), 1 (k)
+- Parameters used (FR): 4 (numIters), 1 (k)
 
 ### Additional Modifications: ###
 - Conversion of observations to lowercase in learning and testing phase
 
 #### Test Results for EN: ####
 Entity in gold data: 226
-Entity in prediction: 304
+Entity in prediction: 323
 
-Correct Entity : 150
-Entity  precision: 0.4934
-Entity  recall: 0.6637
-Entity  F: 0.5660
+Correct Entity : 160
+Entity  precision: 0.4954
+Entity  recall: 0.7080
+Entity  F: 0.5829
 
-Correct Sentiment : 85
-Sentiment  precision: 0.2796
-Sentiment  recall: 0.3761
-Sentiment  F: 0.3208
+Correct Sentiment : 86
+Sentiment  precision: 0.2663
+Sentiment  recall: 0.3805
+Sentiment  F: 0.3133
+
 
 #### Test Results for FR: ####
 Entity in gold data: 223
-Entity in prediction: 228
+Entity in prediction: 280
 
-Correct Entity : 151
-Entity  precision: 0.6623
-Entity  recall: 0.6771
-Entity  F: 0.6696
+Correct Entity : 177
+Entity  precision: 0.6321
+Entity  recall: 0.7937
+Entity  F: 0.7038
 
-Correct Sentiment : 100
-Sentiment  precision: 0.4386
-Sentiment  recall: 0.4484
-Sentiment  F: 0.4435
+Correct Sentiment : 103
+Sentiment  precision: 0.3679
+Sentiment  recall: 0.4619
+Sentiment  F: 0.4095
