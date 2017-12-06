@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Code for 01.112 Machine Learning Project (Part 3)
+Code for 01.112 Machine Learning Project (Part 4)
 
 Done by:
 Vanessa Tan (1001827)
@@ -105,7 +105,7 @@ def sentimentAnalysis(inputPath, m_training, emissionEstimates, transitionEstima
         if observation:
             observationSequence.append(observation)
         else:
-            predictionSequence = viterbi(observationSequence, m_training, emissionEstimates, transitionEstimates)
+            predictionSequence = maxMarginal(observationSequence, m_training, emissionEstimates, transitionEstimates)
             for i in range(len(observationSequence)):
                 if predictionSequence:
                     f.write('%s %s\n' % (observationSequence[i], predictionSequence[i]))
@@ -118,63 +118,91 @@ def sentimentAnalysis(inputPath, m_training, emissionEstimates, transitionEstima
     print 'Finished writing to file %s' % (outputPath)
     return f.close()
 
-def viterbi(observationSequence, m_training, emissionEstimates, transitionEstimates):
-    """ Viterbi algorithm """
+def maxMarginal(observationSequence, m_training, emissionEstimates, transitionEstimates):
+    """ Max-Marginal Decoding with Forward-backward """
     tags = list(emissionEstimates)
-    pi = [{tag: [0.0, ''] for tag in list(emissionEstimates)} for o in observationSequence]
+
+    def getAlpha():
+        """ Finds the values of alpha"""
+        values = [{tag:0.0 for tag in tags} for o in observationSequence]
+
+        # Base case
+        for c_tag in tags:
+            if c_tag not in transitionEstimates['##START##']: continue  # update tags which can be transitioned from ##START##
+
+            values[0][c_tag] = transitionEstimates['##START##'][c_tag]
+
+        # Recursive case
+        for j in range(1, len(observationSequence)):
+            for c_tag in tags:
+                for p_tag in tags:
+                    if c_tag not in transitionEstimates[p_tag]: continue  # only add to sum tags which can transition to c_tag
+
+                    if observationSequence[j-1] in m_training:  # if this is not ##UNK##
+                        if observationSequence[j-1] not in emissionEstimates[p_tag]: continue # skip if this emission cannot be found
+
+                        # add if this emission can be found!
+                        values[j][c_tag] += values[j - 1][p_tag] * transitionEstimates[p_tag][c_tag] * emissionEstimates[p_tag][observationSequence[j - 1]]
+                    else:  # if this is ##UNK##
+                        values[j][c_tag] += values[j - 1][p_tag] * transitionEstimates[p_tag][c_tag] * emissionEstimates[p_tag]['##UNK##']
+
+        return values
+
+    def getBeta():
+        """ Finds the values of beta """
+        values = [{tag: 0.0 for tag in tags} for o in observationSequence]
+
+        # Base case
+        for p_tag in tags:
+            if '##STOP##' not in transitionEstimates[p_tag]: continue  # update tags which can transition to ##STOP##
+
+            if observationSequence[-1] in m_training:  # if this word is not ##UNK##
+                if observationSequence[-1] not in emissionEstimates[p_tag]: continue  # skip if this emission cannot be found
+
+                # add if this emission can be found!
+                values[-1][p_tag] = transitionEstimates[p_tag]['##STOP##'] * emissionEstimates[p_tag][observationSequence[-1]]
+            else:  # if this is ##UNK##
+                values[-1][p_tag] = transitionEstimates[p_tag]['##STOP##'] * emissionEstimates[p_tag]['##UNK##']
+
+        # Recursive case
+        for j in reversed(range(len(observationSequence)-1)):
+            for p_tag in tags:
+                for c_tag in tags:
+                    if c_tag not in transitionEstimates[p_tag]: continue  # only add to sum c_tags which can be transitioned from this p_tag
+
+                    if observationSequence[j] in m_training:  # if this word is not ##UNK##
+                        if observationSequence[j] not in emissionEstimates[p_tag]: continue  # move to next p_tag if this emission cannot be found
+
+                        # include emission probability if this emission can be found!
+                        values[j][p_tag] += values[j + 1][c_tag] * transitionEstimates[p_tag][c_tag] * emissionEstimates[p_tag][observationSequence[j]]
+                    else:  # if this is ##UNK##
+                        values[j][p_tag] += values[j + 1][c_tag] * transitionEstimates[p_tag][c_tag] * emissionEstimates[p_tag]['##UNK##']
+
+        return values
 
     # Initialization
-    for c_tag in tags:
-        if c_tag not in transitionEstimates['##START##']: continue  # update tags which can be transitioned from ##START##
+    alphas = getAlpha()
+    betas = getBeta()
 
-        if observationSequence[0] in m_training:  # if this word is not ##UNK##
-            if observationSequence[0] in emissionEstimates[c_tag]:  # and this emission can be found
-                emission = emissionEstimates[c_tag][observationSequence[0]]
-            else:  # but this emission doesn't exist
-                emission = 0.0
-        else:  # if this word is ##UNK##
-            emission = emissionEstimates[c_tag]['##UNK##']
+    ## DEBUG
+    # print '\n[DEBUG UTIL] All values displayed should be equal!'
+    # for j in range(len(observationSequence)):
+    #     print observationSequence[j]
+    #     sum = 0.0
+    #     for tag in tags:
+    #         sum += alphas[j][tag] * betas[j][tag]
+    #     print sum
+    # print '\n'
 
-        pi[0][c_tag] = [transitionEstimates['##START##'][c_tag] * emission, '##START##']
-
-    # Recursive case
-    for k in range(1, len(observationSequence)):  # pi[k][c_tag] = max(a(p_tag, c_tag)...)
-        for c_tag in tags:
-            for p_tag in tags:
-                if c_tag not in transitionEstimates[p_tag]: continue  # only compare p_tags which can transition to c_tag
-
-                score = pi[k-1][p_tag][0] * transitionEstimates[p_tag][c_tag]
-                if score > pi[k][c_tag][0]:
-                    pi[k][c_tag] = [score, p_tag]
-
-            if observationSequence[k] in m_training:  # if this word is not ##UNK##
-                if observationSequence[k] in emissionEstimates[c_tag]:  # and this emission can be found
-                    emission = emissionEstimates[c_tag][observationSequence[k]]
-                else:  # but this emission doesn't exist
-                    emission = 0.0
-            else:  # if this word is ##UNK##
-                emission = emissionEstimates[c_tag]['##UNK##']
-
-            pi[k][c_tag][0] *= emission
-
-    # Finally
-    result = [0.0, '']
-    for p_tag in tags:
-        if '##STOP##' not in transitionEstimates[p_tag]: continue  # only compare p_tags which can transition to ##STOP##
-
-        score = pi[-1][p_tag][0] * transitionEstimates[p_tag]['##STOP##']
-        if score > result[0]:
-            result = [score, p_tag]
-
-    # Backtracking
-    if not result[1]:  # for those weird cases where the final probability is 0
-        return
-
-    prediction = [result[1]]
-    for k in reversed(range(len(observationSequence))):
-        if k == 0: break  # skip ##START## tag
-        prediction.insert(0, pi[k][prediction[0]][1])
-
+    # After initializing, just use alphas and betas to make the prediction
+    prediction = []
+    for i in range(len(observationSequence)):
+        result = [0.0, '']
+        for tag in tags:
+            score = alphas[i][tag] * betas[i][tag]
+            if score > result[0]:
+                result = [score, tag]
+        prediction.append(result[1])
     return prediction
 
 if __name__=='__main__':
@@ -185,8 +213,9 @@ if __name__=='__main__':
 
     trainFilePath = '../%s/train' % (args.dataset)
     inputTestFilePath = '../%s/dev.in' % (args.dataset)
-    outputTestFilePath = '../%s/dev.p3.out' % (args.dataset)
+    outputTestFilePath = '../%s/dev.p4.out' % (args.dataset)
 
     transitionEstimates = estimateTransition(trainFilePath)
     m_training, emissionEstimates = estimateEmission(trainFilePath)
     sentimentAnalysis(inputTestFilePath, m_training, emissionEstimates, transitionEstimates, outputTestFilePath)
+
