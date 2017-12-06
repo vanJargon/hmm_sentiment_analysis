@@ -1,18 +1,13 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Thu Nov 16 23:21:14 2017
+Code for 01.112 Machine Learning Project (Part 5)
 
-@author: 1001827
+Done by:
+Vanessa Tan (1001827)
+Shruthi Shangar (1001630)
 """
-dataset = 'EN'
-# dataset = 'FR'
-
-trainFilePath = '../%s/train' % (dataset)
-inputTestFilePath = '../%s/dev.in' % (dataset)
-outputTestFilePath = '../%s/dev.p5.out' % (dataset)
-inputHiddenTestFilePath = '../%s/test.in' % (dataset)
-outputHiddenTestFilePath = '../%s/test.p5.out' % (dataset)
+import argparse
 
 def getGlobalFeatures(filePath, k=1):
     observations = {}
@@ -68,9 +63,6 @@ def getGlobalFeatures(filePath, k=1):
 
 def updateWeights(observationSequence, goldTags, predictedTags, m_training, emissionFeatures, transitionFeatures):
     """ Helper function to update weights """
-    # print 'gold:', goldTags
-    # print 'pred:', predictedTags
-
     goldTags.insert(0, '##START##')
     goldTags.append('##STOP##')
     predictedTags.insert(0, '##START##')
@@ -143,7 +135,6 @@ def viterbi(observationSequence, m_training, emissionFeatures, transitionFeature
                 pi[k][c_tag][0] += emissionFeatures[c_tag][observationSequence[k]][0]
             else:  # if this word is ##UNK##
                 pi[k][c_tag][0] += emissionFeatures[c_tag]['##UNK##'][0]
-        # print pi[k]
 
     # Finally
     result = [None, '']
@@ -163,13 +154,13 @@ def viterbi(observationSequence, m_training, emissionFeatures, transitionFeature
     return prediction
 
 
-def trainModel(filePath, m_training, emissionFeatures, transitionFeatures, numIters=12):  # FR tried till numIters=22
+def trainModel(filePath, m_training, emissionFeatures, transitionFeatures, numIters=4):  # FR tried till numIters=22
     """ trains the model according to the structured perceptron algorithm """
     n = 0  # number of instances in training (nT)
 
     # Iterate over training data for numIters
     for t in range(numIters):
-        print 'Iteration:', t
+        print 'Training model in iteration', t, '...'
         observationSequence = []
         goldTagSequence = []
         for line in open(filePath, 'r'):
@@ -225,10 +216,21 @@ def sentimentAnalysis(inputPath, m_training, emissionEstimates, transitionEstima
     print 'Finished writing to file %s' % (outputPath)
     return f.close()
 
+if __name__=='__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-d', type=str, dest='dataset', help='Dataset to run script over', required=True)
+    parser.add_argument('-k', type=int, dest='k', help='Minimum number of times a word needs to appear to not be replaced', default=1, required=False)
+    parser.add_argument('-i', type=int, dest='i', help='Number of iterations over training data in Structured Perceptron algorithm', default=4, required=False)
 
-m_training, emissionFeatures, transitionFeatures = getGlobalFeatures(trainFilePath, k=1)
-emissionFeatures, transitionFeatures = trainModel(trainFilePath, m_training, emissionFeatures, transitionFeatures)
-print emissionFeatures
-print transitionFeatures
-sentimentAnalysis(inputTestFilePath, m_training, emissionFeatures, transitionFeatures, outputTestFilePath)
-sentimentAnalysis(inputHiddenTestFilePath, m_training, emissionFeatures, transitionFeatures, outputHiddenTestFilePath)
+    args = parser.parse_args()
+
+    trainFilePath = '../%s/train' % (args.dataset)
+    inputTestFilePath = '../%s/dev.in' % (args.dataset)
+    outputTestFilePath = '../%s/dev.p5.out' % (args.dataset)
+    inputHiddenTestFilePath = '../%s/test.in' % (args.dataset)
+    outputHiddenTestFilePath = '../%s/test.p5.out' % (args.dataset)
+
+    m_training, emissionFeatures, transitionFeatures = getGlobalFeatures(trainFilePath, k=args.k)
+    emissionFeatures, transitionFeatures = trainModel(trainFilePath, m_training, emissionFeatures, transitionFeatures, numIters=args.i)
+    sentimentAnalysis(inputTestFilePath, m_training, emissionFeatures, transitionFeatures, outputTestFilePath)
+    sentimentAnalysis(inputHiddenTestFilePath, m_training, emissionFeatures, transitionFeatures, outputHiddenTestFilePath)

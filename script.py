@@ -1,21 +1,14 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Thu Nov 16 23:21:14 2017
+Code for 01.112 Machine Learning Project (Part 2)
 
-@author: 1001827
+Done by:
+Vanessa Tan (1001827)
+Shruthi Shangar (1001630)
 """
-dataset = 'EN'
-# dataset = 'FR'
-# dataset = 'CN'
-# dataset = 'SG'
+import argparse
 
-trainFilePath = '../%s/train' % (dataset)
-inputTestFilePath = '../%s/dev.in' % (dataset)
-outputTestFilePath = '../%s/dev.p2.out' % (dataset)
-
-
-# Part 2
 def estimateEmission(filePath, k=3):
     tags = {}  # count of the number of times a particular tag has appeared
     observations = {}  # count of the number of times a particular observation has appeared (irrespective of tag)
@@ -62,10 +55,6 @@ def estimateEmission(filePath, k=3):
                 estimates[tag][observation] = float(l_Observations[tag][observation]) / tags[tag]
         estimates[tag]['##UNK##'] = float(l_Observations[tag]['##UNK##']) / tags[tag]
 
-    # print tags
-    # print observations
-    # print l_Observations
-    # print estimates
     return list(observations), estimates
 
 
@@ -96,6 +85,15 @@ def sentimentAnalysis(inputPath, estimates, outputPath):
     print 'Finished writing to file %s' % (outputPath)
     return f.close()
 
+if __name__=='__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-d', type=str, dest='dataset', help='Dataset to run script over', required=True)
 
-m_training, estimates = estimateEmission(trainFilePath)
-sentimentAnalysis(inputTestFilePath, estimates, outputTestFilePath)
+    args = parser.parse_args()
+
+    trainFilePath = '../%s/train' % (args.dataset)
+    inputTestFilePath = '../%s/dev.in' % (args.dataset)
+    outputTestFilePath = '../%s/dev.p2.out' % (args.dataset)
+
+    m_training, estimates = estimateEmission(trainFilePath)
+    sentimentAnalysis(inputTestFilePath, estimates, outputTestFilePath)

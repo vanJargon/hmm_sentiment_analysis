@@ -1,18 +1,14 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Thu Nov 16 23:21:14 2017
+Code for 01.112 Machine Learning Project (Part 4)
 
-@author: 1001827
+Done by:
+Vanessa Tan (1001827)
+Shruthi Shangar (1001630)
 """
-dataset = 'EN'
-# dataset = 'FR'
+import argparse
 
-trainFilePath = '../%s/train' % (dataset)
-inputTestFilePath = '../%s/dev.in' % (dataset)
-outputTestFilePath = '../%s/dev.p4.out' % (dataset)
-
-# Same as part 2
 def estimateEmission(filePath, k=3):
     tags = {}  # count of the number of times a particular tag has appeared
     observations = {}  # count of the number of times a particular observation has appeared (irrespective of tag)
@@ -59,13 +55,8 @@ def estimateEmission(filePath, k=3):
                 estimates[tag][observation] = float(l_Observations[tag][observation]) / tags[tag]
         estimates[tag]['##UNK##'] = float(l_Observations[tag]['##UNK##']) / tags[tag]
 
-    # print tags
-    # print observations
-    # print l_Observations
-    # print estimates
     return list(observations), estimates
 
-# Same as part 3
 def estimateTransition(filePath):
     tags = {}  # count the number of times a particular y(i-1) tag has appeared
     t_Tags = {}  # count the number of times a particular transition from y(i) to y(i-1) has appeared
@@ -214,6 +205,17 @@ def maxMarginal(observationSequence, m_training, emissionEstimates, transitionEs
         prediction.append(result[1])
     return prediction
 
-transitionEstimates = estimateTransition(trainFilePath)
-m_training, emissionEstimates = estimateEmission(trainFilePath)
-sentimentAnalysis(inputTestFilePath, m_training, emissionEstimates, transitionEstimates, outputTestFilePath)
+if __name__=='__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-d', type=str, dest='dataset', help='Dataset to run script over', required=True)
+
+    args = parser.parse_args()
+
+    trainFilePath = '../%s/train' % (args.dataset)
+    inputTestFilePath = '../%s/dev.in' % (args.dataset)
+    outputTestFilePath = '../%s/dev.p4.out' % (args.dataset)
+
+    transitionEstimates = estimateTransition(trainFilePath)
+    m_training, emissionEstimates = estimateEmission(trainFilePath)
+    sentimentAnalysis(inputTestFilePath, m_training, emissionEstimates, transitionEstimates, outputTestFilePath)
+
