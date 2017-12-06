@@ -1,4 +1,4 @@
-# HMM for Tweet Sentiment Analysis
+# Hidden Markov Models for Tweet Sentiment Analysis
 Implementation of HMM and Structured Perceptron algorithm for POS Tagging of tweets. 
 
 ##### Python version: 2.7.9 #####
@@ -14,7 +14,7 @@ This project is divided into 5 main parts as follows:
 
 Usage Instructions:
 ====================
-Download the file and change into the `code` directory. 
+Clone the repository and change into the `/source` directory. 
 
 To run the scripts for Parts 2-4 for each dataset,
 
@@ -38,7 +38,7 @@ python part5.py -d EN -k 3 -i 4
 
 For all parts, the output file will be saved in the directory of the respective dataset (e.g. `/EN`.
 
-##### Important: Please do not change the structure of the file directory as the relative path of the training set, validation set and output file is specified in the script. #####
+##### Important: Please do not change the structure of the file directory as the relative paths of the training set, validation set and output file are specified in the script. #####
 
 Evaluation Results 
 ===================
