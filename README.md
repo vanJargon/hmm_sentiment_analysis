@@ -1,7 +1,7 @@
 # Machine Learning Project
 HMM for tweet sentiment analysis
 
-#####Python version: 2.7.9#####
+##### Python version: 2.7.9 #####
 
 Project Overview:
 =================
@@ -38,12 +38,12 @@ python part5.py -d EN -k 3 -i 4
 
 For all parts, the output file will be saved in the directory of the respective dataset (e.g. `/EN`.
 
-#####Important:#####
+##### Important: #####
 Please do not change the structure of the file directory as the relative path of the training set, validation set and output file is specified in the script.
 
 Evaluation Results 
 ===================
-###Part 2###
+### Part 2 ###
 #### Test Results for EN: ####
 Entity in gold data: 226
 Entity in prediction: 1201
@@ -100,7 +100,7 @@ Sentiment  precision: 0.0477
 Sentiment  recall: 0.2279
 Sentiment  F: 0.0789
 
-###Part 3###
+### Part 3 ###
 #### Test Results for EN: ####
 Entity in gold data: 226
 Entity in prediction: 162
@@ -157,7 +157,7 @@ Sentiment  precision: 0.3375
 Sentiment  recall: 0.1766
 Sentiment  F: 0.2318
 
-###Part 4###
+### Part 4 ###
 #### Test Results for EN: ####
 Entity in gold data: 226
 Entity in prediction: 175
@@ -186,9 +186,9 @@ Sentiment  precision: 0.4220
 Sentiment  recall: 0.3274
 Sentiment  F: 0.3687
 
-###Part 5###
+### Part 5 ###
 ### Additional Modifications: ###
-- Pre-processingConversion of observations to lowercase in learning and testing phase
+- Pre-processing: Conversion of observations to lowercase in learning and testing phase
 
 #### Test Results for EN: ####
 Entity in gold data: 226
@@ -204,7 +204,7 @@ Sentiment  precision: 0.2663
 Sentiment  recall: 0.3805
 Sentiment  F: 0.3133
 
-#####Parameters used for EN: numIters=12, k=1#####
+##### Parameters used for EN: numIters=12, k=1 #####
 
 
 #### Test Results for FR: ####
@@ -221,4 +221,4 @@ Sentiment  precision: 0.3679
 Sentiment  recall: 0.4619
 Sentiment  F: 0.4095
 
-#####Parameters used for FR: numIters=4, k=1#####
+##### Parameters used for FR: numIters=4, k=1 #####
