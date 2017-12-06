@@ -1,5 +1,5 @@
-# Machine Learning Project
-HMM for tweet sentiment analysis
+# HMM for Tweet Sentiment Analysis
+Implementation of HMM and Structured Perceptron algorithm for POS Tagging of tweets. 
 
 ##### Python version: 2.7.9 #####
 
@@ -38,8 +38,7 @@ python part5.py -d EN -k 3 -i 4
 
 For all parts, the output file will be saved in the directory of the respective dataset (e.g. `/EN`.
 
-##### Important: #####
-Please do not change the structure of the file directory as the relative path of the training set, validation set and output file is specified in the script.
+##### Important: Please do not change the structure of the file directory as the relative path of the training set, validation set and output file is specified in the script. #####
 
 Evaluation Results 
 ===================
@@ -187,7 +186,7 @@ Sentiment  recall: 0.3274
 Sentiment  F: 0.3687
 
 ### Part 5 ###
-### Additional Modifications: ###
+#### Additional Modifications: ####
 - Pre-processing: Conversion of observations to lowercase in learning and testing phase
 
 #### Test Results for EN: ####
