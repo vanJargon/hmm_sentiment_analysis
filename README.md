@@ -1,9 +1,49 @@
 # Machine Learning Project
 HMM for tweet sentiment analysis
 
+#####Python version: 2.7.9#####
 
-Part 2
-------
+Project Overview:
+=================
+This project is divided into 5 main parts as follows:
+- Part 1: Annotation of POS tags for tweets
+- Part 2: Decoding of POS tags using emission probabilities
+- Part 3: Decoding of POS tags using HMM (Viterbi)
+- Part 4: Decoding of POS tags using HMM (Forward-Backward Algorithm)
+- Part 5: Decoding of POS tags using Structured Perceptron (Collins, 2002)
+
+Usage Instructions:
+====================
+Download the file and change into the `code` directory. 
+
+To run the scripts for Parts 2-4 for each dataset,
+
+Use `-d` to specify the dataset that should be run (ie. `EN`, `FR`, `CN` or `SG`)
+
+For instance, to run `part2.py` over the `EN` dataset, run:
+```
+python part2.py -d EN
+```
+
+For Part 5,
+
+Use `-k` to specify the minimum number of times a word needs to be observed in the training dataset to not be replaced with `'##UNK##'`
+
+Use `-i` to specify the number of iterations over the training data in the Structured Perceptron algorithm
+
+For instance, to run `part5.py` over the `EN` dataset with `k=3` and `i=4`, run:
+```
+python part5.py -d EN -k 3 -i 4
+```
+
+For all parts, the output file will be saved in the directory of the respective dataset (e.g. `/EN`.
+
+#####Important:#####
+Please do not change the structure of the file directory as the relative path of the training set, validation set and output file is specified in the script.
+
+Evaluation Results 
+===================
+###Part 2###
 #### Test Results for EN: ####
 Entity in gold data: 226
 Entity in prediction: 1201
@@ -60,8 +100,7 @@ Sentiment  precision: 0.0477
 Sentiment  recall: 0.2279
 Sentiment  F: 0.0789
 
-Part 3
-------
+###Part 3###
 #### Test Results for EN: ####
 Entity in gold data: 226
 Entity in prediction: 162
@@ -118,8 +157,7 @@ Sentiment  precision: 0.3375
 Sentiment  recall: 0.1766
 Sentiment  F: 0.2318
 
-Part 4
-------
+###Part 4###
 #### Test Results for EN: ####
 Entity in gold data: 226
 Entity in prediction: 175
@@ -148,14 +186,9 @@ Sentiment  precision: 0.4220
 Sentiment  recall: 0.3274
 Sentiment  F: 0.3687
 
-Part 5
-------
-Implementation of Structured Perceptron algorithm.
-- Parameters used (EN): 12 (numIters), 1 (k)
-- Parameters used (FR): 4 (numIters), 1 (k)
-
+###Part 5###
 ### Additional Modifications: ###
-- Conversion of observations to lowercase in learning and testing phase
+- Pre-processingConversion of observations to lowercase in learning and testing phase
 
 #### Test Results for EN: ####
 Entity in gold data: 226
@@ -171,6 +204,8 @@ Sentiment  precision: 0.2663
 Sentiment  recall: 0.3805
 Sentiment  F: 0.3133
 
+#####Parameters used for EN: numIters=12, k=1#####
+
 
 #### Test Results for FR: ####
 Entity in gold data: 223
@@ -185,3 +220,5 @@ Correct Sentiment : 103
 Sentiment  precision: 0.3679
 Sentiment  recall: 0.4619
 Sentiment  F: 0.4095
+
+#####Parameters used for FR: numIters=4, k=1#####

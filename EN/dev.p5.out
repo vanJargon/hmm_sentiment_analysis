@@ -25,30 +25,30 @@ to O
 get O
 in O
 , O
-along O
-with O
-four O
+along B-positive
+with I-positive
+four I-positive
 other O
 guests O
 . O
 
 The O
-tuna B-positive
-and I-positive
-wasabe I-positive
-potatoes I-positive
+tuna B-negative
+and O
+wasabe O
+potatoes B-positive
 are O
 excellent O
 . O
 
 My O
-favortie B-neutral
-pizza I-neutral
-joint O
+favortie B-positive
+pizza I-positive
+joint I-positive
 in O
 Seattle O
 
-Food B-neutral
+Food B-positive
 wise O
 , O
 its O
@@ -63,15 +63,15 @@ you O
 get O
 considering O
 the O
-restaurant B-positive
+restaurant B-negative
 isn't O
 a O
 fancy O
-place B-positive
+place B-negative
 . O
 
-â€“ O
-tucked B-negative
+– O
+tucked O
 away O
 over O
 by O
@@ -90,12 +90,12 @@ and O
 I O
 had O
 that O
-signature B-negative
+signature O
 ? O
 MSG O
 ? O
 taste O
-lingering B-negative
+lingering O
 in O
 my O
 throat O
@@ -103,13 +103,13 @@ after O
 I O
 left O
 the O
-restaurant B-positive
+restaurant B-negative
 . O
 
 It's O
 a O
 tiny O
-place B-positive
+place B-negative
 so O
 if O
 you O
@@ -122,15 +122,15 @@ on O
 a O
 weekend O
 ( O
-Thurs B-negative
+Thurs O
 ? O
-Sun B-positive
-) I-positive
+Sun O
+) O
 you O
 will O
 find O
 it O
-easier B-negative
+easier O
 to O
 get O
 a O
@@ -140,8 +140,8 @@ a O
 seat O
 at O
 the O
-sushi B-positive
-bar I-positive
+sushi B-negative
+bar I-negative
 . O
 
 The O
@@ -151,8 +151,8 @@ is O
 wonderful O
 and O
 the O
-food B-neutral
-reminds I-neutral
+food B-positive
+reminds O
 me O
 of O
 my O
@@ -164,9 +164,9 @@ Italy O
 
 We O
 all O
-agreed B-negative
+agreed O
 that O
-mare B-negative
+mare O
 is O
 one O
 of O
@@ -179,15 +179,15 @@ New O
 York O
 . O
 
-Believe B-neutral
+Believe O
 it O
-baby B-negative
+baby O
 ! O
 
 We O
 have O
 since O
-returned B-negative
+returned O
 and O
 also O
 had O
@@ -195,7 +195,7 @@ a O
 great O
 experience O
 , O
-sampling B-negative
+sampling O
 more O
 small O
 plates O
@@ -204,8 +204,8 @@ a O
 variety O
 of O
 the O
-beer B-positive
-( I-positive
+beer B-negative
+( O
 cold O
 and O
 good O
@@ -214,14 +214,14 @@ good O
 
 Compared O
 to O
-Ess-a B-negative
+Ess-a O
 , O
-Tal B-negative
+Tal O
 offers O
 a O
 less O
-doughy B-negative
-bagel O
+doughy O
+bagel B-negative
 ! O
 
 It O
@@ -245,7 +245,7 @@ delicious O
 . O
 
 the O
-staff B-positive
+staff B-negative
 was O
 very O
 nice O
@@ -265,7 +265,7 @@ to O
 finish O
 , O
 a O
-mind-bogglingly B-negative
+mind-bogglingly O
 uncomfortable O
 experience O
 . O
@@ -278,11 +278,11 @@ a O
 friend O
 on O
 a O
-whim B-negative
+whim O
 , O
 we O
 went O
-someplace B-negative
+someplace O
 else O
 first O
 and O
@@ -293,11 +293,11 @@ table O
 . O
 
 We O
-concluded B-negative
+concluded O
 with O
 tiramisu B-negative
-chocolate O
-cake O
+chocolate I-negative
+cake I-negative
 , O
 both O
 were O
@@ -317,23 +317,23 @@ either O
 we O
 went O
 with O
-Brahma B-negative
+Brahma O
 . O
 
-â€“ O
+– O
 This O
 review O
 is O
 for O
 the O
-Southglen B-negative
-location O
+Southglen O
+location B-positive
 which O
 is O
 not O
 listed O
 in O
-Citysearch B-negative
+Citysearch O
 : O
 I O
 wish O
@@ -348,7 +348,7 @@ for O
 it O
 to O
 be O
-addressed B-negative
+addressed O
 by O
 management B-negative
 but O
@@ -367,12 +367,12 @@ eat O
 at O
 this O
 overpriced O
-restaurant B-positive
-with I-positive
+restaurant B-negative
+with O
 mediocre O
 food B-positive
 and O
-service B-positive
+service B-negative
 , O
 so O
 this O
@@ -387,10 +387,10 @@ ones O
 for O
 their O
 Larimer B-negative
-location O
-will O
-go O
-unaddressed B-negative
+location I-negative
+will I-negative
+go I-negative
+unaddressed I-negative
 . O
 
 I'll O
@@ -403,8 +403,8 @@ sure O
 Good O
 Experience O
 
-The B-neutral
-lox I-neutral
+The O
+lox O
 is O
 always O
 fresh O
@@ -416,13 +416,13 @@ we O
 were O
 looking O
 for O
-regular B-positive
+regular O
 lettuce O
 and O
 some O
-walnuts B-positive
-the O
-salads B-positive
+walnuts B-negative
+the I-negative
+salads I-negative
 we O
 got O
 were O
@@ -442,7 +442,7 @@ take O
 reservations O
 . O
 
-Beautiful B-neutral
+Beautiful O
 experience O
 . O
 
@@ -452,15 +452,15 @@ drink O
 
 There O
 is O
-" B-negative
-Expensive-but-worth-it I-negative
-" I-negative
+" O
+Expensive-but-worth-it O
+" O
 and O
 there O
 is O
-" B-negative
-Expensive-and-WTF I-negative
-" I-negative
+" O
+Expensive-and-WTF O
+" O
 ? O
 
 And O
@@ -475,12 +475,12 @@ important O
 
 this O
 little O
-place B-positive
+place B-negative
 has O
 a O
 cute O
-interior O
-decor B-positive
+interior B-negative
+decor I-negative
 and O
 affordable O
 city O
@@ -524,13 +524,13 @@ my O
 visit O
 felt O
 it O
-necessary B-negative
+necessary O
 to O
 try O
 and O
 warn O
 other O
-diners B-negative
+diners O
 who O
 value O
 their O
@@ -540,14 +540,14 @@ time O
 . O
 
 The O
-place B-positive
+place B-negative
 itself O
 is O
 beautiful O
 the O
-bar O
-scene B-positive
-seems O
+bar B-negative
+scene I-negative
+seems I-negative
 to O
 be O
 happening O
@@ -556,58 +556,58 @@ happening O
 Also O
 , O
 the O
-sandwiches B-negative
+sandwiches O
 ( O
-nearing B-neutral
-$ B-neutral
-7 B-neutral
-) B-neutral
-didn't B-neutral
-come B-neutral
-with B-neutral
-anything B-neutral
-like B-neutral
-chips B-neutral
-or B-neutral
-a B-neutral
-side B-neutral
-. B-neutral
+nearing O
+$ O
+7 O
+) O
+didn't O
+come O
+with O
+anything B-negative
+like I-negative
+chips I-negative
+or I-negative
+a O
+side O
+. O
 
-The B-negative
-stuff I-negative
-tilapia I-negative
+The O
+stuff O
+tilapia O
 was O
-horrid B-negative
+horrid O
 ... O
 tasted O
 like O
-cardboard B-negative
+cardboard O
 . O
 
-You B-neutral
-can B-neutral
-easily B-neutral
-hear B-neutral
-him B-neutral
-though B-neutral
-so B-neutral
-it B-neutral
-was B-neutral
-a B-neutral
-pleasant B-neutral
-sound B-neutral
-and B-neutral
-not B-neutral
-overbearing B-neutral
-. B-neutral
+You O
+can O
+easily O
+hear O
+him O
+though O
+so O
+it O
+was O
+a O
+pleasant B-negative
+sound I-negative
+and O
+not O
+overbearing O
+. O
 
 It's O
 definately O
 not O
 a O
-place B-positive
-to O
-go O
+place B-negative
+to I-negative
+go I-negative
 if O
 you O
 want O
@@ -619,7 +619,7 @@ someone O
 The O
 lamb B-positive
 was O
-tender B-negative
+tender O
 so O
 full O
 of O
@@ -637,7 +637,7 @@ vibe B-positive
 , O
 lots O
 of O
-people O
+people B-negative
 . O
 
 To O
@@ -648,7 +648,7 @@ off O
 our O
 lovely O
 server B-negative
-Brooke I-negative
+Brooke O
 was O
 quickly O
 on O
@@ -677,8 +677,8 @@ to O
 do O
 with O
 the O
-food B-neutral
-anymore I-neutral
+food B-positive
+anymore O
 . O
 
 The O
@@ -695,11 +695,11 @@ I O
 really O
 enjoyed O
 the O
-bhartha B-negative
+bhartha O
 , O
 not O
 too O
-tomatoey B-negative
+tomatoey O
 . O
 
 Fabulous O
@@ -715,15 +715,15 @@ don't O
 put O
 you O
 off O
-â€“ O
+– O
 
-Single B-neutral
+Single O
 Worst O
-Restaurant B-positive
+Restaurant B-negative
 in O
 Manhattan O
 
-Inside B-neutral
+Inside O
 is O
 a O
 little O
@@ -741,8 +741,8 @@ they O
 do O
 take O
 your O
-cellphone B-neutral
-numbers I-neutral
+cellphone O
+numbers O
 so O
 that O
 you O
@@ -754,31 +754,31 @@ somewhere O
 else O
 till O
 they O
-call B-negative
+call O
 you O
 up O
 on O
 your O
-cellphone B-negative
+cellphone O
 . O
 
 Go O
 to O
-japanese B-positive
-sushi I-positive
-place I-positive
+japanese B-negative
+sushi I-negative
+place B-negative
 or O
 Spanish B-positive
 tapas I-positive
 place I-positive
 - O
 this O
-creation B-negative
+creation O
 in O
-Williamsburg B-positive
+Williamsburg O
 is O
 a O
-misstake B-negative
+misstake O
 . O
 
 Not O
@@ -788,24 +788,24 @@ jump O
 to O
 complaints O
 ( O
-hence B-negative
+hence O
 my O
 lack O
 of O
 previous O
 online O
-reviewing B-positive
-) I-positive
+reviewing O
+) O
 , O
 I O
 called O
 the O
-restaurant B-positive
+restaurant B-negative
 to O
 give O
 them O
 a O
-heads B-negative
+heads O
 up O
 that O
 their O
@@ -815,11 +815,11 @@ want O
 to O
 check O
 the O
-cleanliness B-negative
+cleanliness O
 of O
 their O
-prep B-neutral
-stations I-neutral
+prep O
+stations O
 . O
 
 I'm O
@@ -829,7 +829,7 @@ was O
 introduced O
 to O
 this O
-place B-positive
+place B-negative
 and O
 this O
 is O
@@ -846,10 +846,10 @@ rather O
 cramped O
 and O
 busy O
-restaurant B-positive
+restaurant B-negative
 and O
 it O
-closes B-negative
+closes O
 early O
 . O
 
@@ -868,7 +868,7 @@ very O
 affordable O
 . O
 
-Mmm B-neutral
+Mmm O
 ... O
 good O
 ! O
@@ -888,10 +888,10 @@ Wine B-positive
 ? O
 
 The O
-staff B-positive
+staff B-negative
 offers O
 impeccable O
-service B-positive
+service B-negative
 . O
 
 Great O
@@ -899,7 +899,7 @@ Indian B-positive
 Food I-positive
 ! O
 
-â€“ O
+– O
 As O
 with O
 most O
@@ -907,8 +907,8 @@ restaurants O
 in O
 Seattle O
 , O
-Mioposto's B-negative
-service I-negative
+Mioposto's O
+service B-negative
 was O
 bad O
 and O
@@ -919,7 +919,7 @@ overpriced O
 . O
 
 Great O
-draft B-negative
+draft O
 and O
 bottle B-positive
 selection I-positive
@@ -932,14 +932,14 @@ rocks O
 We O
 went O
 to O
-Ino B-negative
-for I-negative
-Valentines I-negative
+Ino O
+for O
+Valentines O
 . O
 
 The O
-wait O
-staff B-positive
+wait B-negative
+staff I-negative
 is O
 pleasant O
 , O
@@ -955,15 +955,15 @@ gorgeous O
 in O
 the O
 wonderful O
-aesthetic B-neutral
-beautification I-neutral
+aesthetic O
+beautification O
 way O
 , O
 not O
 in O
 that O
-she's-way-cuter-than-me-that-b B-neutral
-@ I-neutral
+she's-way-cuter-than-me-that-b O
+@ O
 # O
 $ O
 * O
@@ -998,8 +998,8 @@ here O
 my O
 food B-positive
 was O
-soo B-positive
-spicy I-positive
+soo O
+spicy O
 that O
 I O
 could O
@@ -1009,7 +1009,7 @@ it O
 , O
 and O
 the O
-spice O
+spice B-negative
 took O
 away O
 from O
@@ -1021,7 +1021,7 @@ dish B-negative
 . O
 
 Quite O
-frankly B-negative
+frankly O
 , O
 this O
 is O
@@ -1029,7 +1029,7 @@ some O
 of O
 the O
 worst O
-sushi B-positive
+sushi B-negative
 I O
 have O
 ever O
@@ -1048,7 +1048,7 @@ do O
 so O
 for O
 this O
-place B-positive
+place B-negative
 . O
 
 I O
@@ -1058,14 +1058,14 @@ before O
 eaten O
 40 O
 pieces B-negative
-of O
-relatively O
+of I-negative
+relatively I-negative
 good O
 nigiri B-positive
 . O
 
 When O
-family O
+family B-positive
 came O
 in O
 he O
@@ -1073,9 +1073,9 @@ gave O
 them O
 apps B-positive
 to O
-test B-negative
+test O
 their O
-palets B-negative
+palets O
 , O
 and O
 then O
@@ -1086,7 +1086,7 @@ them O
 
 With O
 the O
-exception B-negative
+exception O
 of O
 our O
 lemon B-negative
@@ -1095,14 +1095,14 @@ that O
 had O
 so O
 much O
-pepper B-negative
+pepper O
 on O
 it O
 that O
 our O
 eyes O
 started O
-watering B-negative
+watering O
 , O
 the O
 food B-positive
@@ -1117,7 +1117,7 @@ great O
 What O
 a O
 great O
-place B-positive
+place B-negative
 . O
 
 My O
@@ -1172,7 +1172,7 @@ ALL O
 of O
 NYC O
 
-Trust B-neutral
+Trust O
 me O
 . O
 
@@ -1180,8 +1180,8 @@ And O
 where O
 does O
 Patis B-negative
-go O
-wrong O
+go I-negative
+wrong I-negative
 ; O
 no O
 where O
@@ -1189,20 +1189,20 @@ where O
 
 This O
 is O
-undoubtedly B-negative
+undoubtedly O
 my O
 favorite O
 modern B-positive
-Japanese O
-brasserie B-positive
-( I-positive
+Japanese I-positive
+brasserie I-positive
+( O
 that O
 don O
-â€™ O
+’ O
 t O
 serve O
-sushi B-positive
-) I-positive
+sushi B-negative
+) O
 , O
 and O
 in O
@@ -1237,7 +1237,7 @@ for O
 me O
 he O
 even O
-exclaimed B-negative
+exclaimed O
 that O
 the O
 french B-positive
@@ -1253,12 +1253,12 @@ had O
 We O
 asked O
 for O
-sides B-negative
+sides O
 which O
 the O
 waiter B-negative
 than O
-admitted B-negative
+admitted O
 that O
 he O
 forgot O
@@ -1274,16 +1274,16 @@ order O
 
 I O
 am O
-bringing B-negative
+bringing O
 my O
 whole O
-family O
+family B-positive
 back O
 next O
 time O
 . O
 
-These B-neutral
+These O
 are O
 overpriced O
 and O
@@ -1301,7 +1301,7 @@ After O
 dinner O
 the O
 manager B-negative
-grabbed I-negative
+grabbed O
 my O
 boyfriend O
 , O
@@ -1327,11 +1327,11 @@ and O
 in O
 the O
 end O
-stormed B-negative
+stormed O
 away O
 almost O
-teareyed B-neutral
-yelling I-neutral
+teareyed O
+yelling O
 that O
 tips O
 are O
@@ -1339,7 +1339,7 @@ the O
 only O
 thing O
 they O
-survive B-negative
+survive O
 on O
 . O
 
@@ -1348,14 +1348,14 @@ was O
 well O
 worth O
 the O
-wait O
+wait B-negative
 . O
 
 My O
 husband O
 and O
 I O
-thougt B-negative
+thougt O
 it O
 would O
 be O
@@ -1385,8 +1385,8 @@ My O
 wife O
 had O
 the O
-fried B-neutral
-shrimp I-neutral
+fried B-positive
+shrimp I-positive
 which O
 are O
 huge O
@@ -1403,7 +1403,7 @@ great O
 pizzeria O
 as O
 I O
-explored B-negative
+explored O
 my O
 new O
 neighborhood O
@@ -1419,14 +1419,14 @@ a O
 peppercorn B-negative
 sauce I-negative
 or I-negative
-red O
-wine B-positive
-reduction I-positive
+red I-negative
+wine I-negative
+reduction I-negative
 , O
 though O
 both O
 were O
-indistinguishable B-negative
+indistinguishable O
 in O
 taste O
 . O
@@ -1454,12 +1454,12 @@ we O
 were O
 told O
 that O
-it'd B-negative
+it'd O
 be O
 a O
 30 O
 minute O
-wait O
+wait B-negative
 . O
 
 I O
@@ -1472,12 +1472,12 @@ Manhattan O
 should O
 cost O
 $ O
-400.00 B-negative
+400.00 O
 where O
 I O
 am O
 not O
-swept B-negative
+swept O
 off O
 my O
 feet O
@@ -1493,7 +1493,7 @@ spectacular O
 
 i O
 actually O
-feel O
+feel B-positive
 like O
 i O
 should O
@@ -1514,42 +1514,42 @@ and O
 the O
 donut O
 like O
-deep B-positive
-fried I-positive
-dough O
-they O
-call B-neutral
+deep O
+fried B-neutral
+dough I-neutral
+they I-neutral
+call I-neutral
 Ow I-neutral
-Ley O
-Soh B-neutral
-, B-neutral
-a B-neutral
-delicious B-neutral
-and B-neutral
-sweet B-neutral
-tasting B-neutral
-bread B-neutral
-. B-neutral
+Ley I-neutral
+Soh I-neutral
+, O
+a O
+delicious O
+and O
+sweet B-negative
+tasting I-negative
+bread I-negative
+. O
 
 Rather O
 than O
 preparing O
 vegetarian B-negative
-dish O
+dish I-negative
 , O
 the O
 chef B-negative
-presented I-negative
+presented O
 me O
 with O
 a O
-plate O
+plate B-negative
 of O
 steamed O
 vegetables O
 ( O
-minus O
-sauce B-positive
+minus B-negative
+sauce I-negative
 , O
 seasoning O
 , O
@@ -1558,7 +1558,7 @@ any O
 form B-negative
 or I-negative
 aesthetic I-negative
-presentation O
+presentation I-negative
 ) O
 . O
 
@@ -1570,22 +1570,22 @@ end O
 up O
 with O
 a O
-fair O
-tab B-neutral
-and I-neutral
-NOTHING I-neutral
+fair B-negative
+tab O
+and O
+NOTHING O
 BUT O
 A O
 GREAT O
-TIME B-negative
+TIME O
 ! O
 ! O
 ! O
 
-â€“ O
+– O
 I O
 am O
-exceedingly B-negative
+exceedingly O
 pleased O
 to O
 report O
@@ -1609,10 +1609,10 @@ very O
 helpful O
 in O
 suggesting B-negative
-us O
-drinks B-positive
-and I-positive
-helped I-positive
+us I-negative
+drinks I-negative
+and O
+helped O
 us O
 in O
 ordering O
@@ -1620,10 +1620,10 @@ a O
 lot O
 of O
 good O
-dishes B-positive
+dishes B-negative
 since O
 we O
-knew B-negative
+knew O
 nothing O
 about O
 Indian B-positive
@@ -1635,27 +1635,27 @@ here O
 on O
 a O
 friend's O
-reccomendation B-negative
+reccomendation O
 . O
 
 I O
 know O
 many O
-people O
+people B-negative
 have O
 their O
 favorite O
-types O
-of O
-pizza B-positive
-and I-positive
+types B-positive
+of I-positive
 pizza I-positive
+and O
+pizza B-negative
 places O
 , O
 but O
-Mioposto's B-neutral
-pizza I-neutral
-lacks I-neutral
+Mioposto's B-positive
+pizza I-positive
+lacks I-positive
 quality O
 and O
 good O
@@ -1685,19 +1685,19 @@ read O
 
 What O
 a O
-hassle B-negative
+hassle O
 ! O
 
 This O
-place B-positive
+place B-negative
 must O
 have O
 cost O
 the O
-owners B-negative
-afortune I-negative
-to I-negative
-build I-negative
+owners B-positive
+afortune O
+to O
+build O
 . O
 
 On O
@@ -1712,12 +1712,12 @@ other O
 guests O
 complaining O
 about O
-similar B-neutral
-issues I-neutral
+similar O
+issues O
 . O
 
 The O
-portions B-positive
+portions B-negative
 are O
 small O
 but O
@@ -1746,7 +1746,7 @@ it O
 Love O
 their O
 drink O
-menu B-positive
+menu B-negative
 . O
 
 If O
@@ -1791,33 +1791,33 @@ busy O
 Its O
 worth O
 the O
-wait O
+wait B-negative
 , O
 especially O
 since O
-they'll B-negative
+they'll O
 give O
 you O
 a O
-call B-negative
+call O
 when O
 the O
 table O
 is O
-ready B-negative
+ready O
 . O
 
 i O
 went O
 to O
-utsav B-negative
+utsav O
 about O
 a O
-yr B-negative
+yr O
 ago O
 with O
 my O
-family O
+family B-positive
 . O
 
 Service B-positive
@@ -1828,13 +1828,13 @@ average O
 One O
 would O
 think O
-we'd B-negative
+we'd O
 get O
 an O
-apology O
-or O
-complimentary O
-drinks B-positive
+apology B-negative
+or I-negative
+complimentary I-negative
+drinks I-negative
 - O
 instead O
 , O
@@ -1854,7 +1854,7 @@ minutes O
 and O
 gave O
 us O
-lip B-negative
+lip O
 when O
 we O
 asked O
@@ -1865,16 +1865,16 @@ so O
 . O
 
 After O
-sitting O
+sitting B-negative
 at O
 the O
-bar B-positive
+bar B-negative
 for O
 over O
 20 O
 minutes O
 the O
-bar B-positive
+bar B-negative
 keep O
 had O
 made O
@@ -1885,15 +1885,15 @@ drinks B-positive
 kept O
 telling O
 us O
-she'd B-negative
+she'd O
 be O
 right O
 with O
 us O
 . O
 
-The B-neutral
-frizzy I-neutral
+The O
+frizzy O
 retro O
 girl B-negative
 ( O
@@ -1905,7 +1905,7 @@ Edna I-negative
 glasses O
 ) O
 will O
-yell B-negative
+yell O
 at O
 you O
 if O
@@ -1928,27 +1928,27 @@ a O
 table O
 in O
 the O
-balcony B-negative
+balcony B-positive
 . O
 
 Dokebi O
 gives O
-Williamsburg B-positive
+Williamsburg O
 the O
 right O
-one-two B-neutral
-punch I-neutral
-of I-neutral
-classic I-neutral
-Korean O
-food B-negative
+one-two B-negative
+punch I-negative
+of I-negative
+classic I-negative
+Korean I-negative
+food I-negative
 and I-negative
 fusion I-negative
 twists I-negative
-like O
-pork O
-belly B-positive
-tacos I-positive
+like I-negative
+pork I-negative
+belly I-negative
+tacos I-negative
 . O
 
 It O
@@ -1960,14 +1960,14 @@ priced O
 . O
 
 this O
-place B-positive
+place B-negative
 ... O
 we O
 stumbled O
 upon O
 it O
 on O
-labor B-negative
+labor O
 day O
 weekend O
 . O
@@ -1977,12 +1977,12 @@ on O
 a O
 3 O
 day O
-oyster B-positive
-binge I-positive
+oyster O
+binge O
 , O
 with O
 Fish B-negative
-bringing I-negative
+bringing O
 up O
 the O
 closing O
@@ -1995,7 +1995,7 @@ glad O
 this O
 was O
 the O
-place B-positive
+place B-negative
 it O
 O O
 trip O
@@ -2008,7 +2008,7 @@ so O
 great O
 ! O
 
-Next B-neutral
+Next O
 time O
 we O
 will O
@@ -2023,11 +2023,11 @@ restaurants O
 close O
 by O
 like O
-Mimi's B-negative
-Cafe O
+Mimi's O
+Cafe B-positive
 and O
-Claim B-neutral
-Jumper I-neutral
+Claim O
+Jumper O
 . O
 
 The O
@@ -2039,7 +2039,7 @@ especially O
 when O
 made O
 by O
-Raymond B-negative
+Raymond O
 . O
 
 Most O
@@ -2051,7 +2051,7 @@ excellent O
 . O
 
 The O
-service B-positive
+service B-negative
 is O
 awful O
 . O
@@ -2060,9 +2060,9 @@ The O
 food B-positive
 is O
 a O
-diamond B-negative
-in I-negative
-rough I-negative
+diamond O
+in O
+rough O
 - O
 - O
 the O
@@ -2071,14 +2071,14 @@ is O
 delicious O
 and O
 homemade B-positive
-with I-positive
+with O
 the O
 perfect O
 balance O
 of O
-herbs B-neutral
-and I-neutral
-tomatoes I-neutral
+herbs O
+and O
+tomatoes O
 . O
 
 Went O
@@ -2090,13 +2090,13 @@ nice O
 decor B-positive
 , O
 good O
-service B-positive
+service B-negative
 , O
 but O
 the O
 food B-positive
 was O
-surprisingly B-negative
+surprisingly O
 excellent O
 . O
 
@@ -2115,9 +2115,9 @@ the O
 entire O
 time O
 a O
-place B-positive
+place B-negative
 is O
-open B-positive
+open O
 , O
 you O
 know O
@@ -2136,13 +2136,13 @@ food B-positive
 , O
 except O
 my O
-brother B-negative
+brother O
 who O
 had O
 the O
 grilled B-positive
-Mahi I-positive
-Mahi I-positive
+Mahi O
+Mahi O
 , O
 seemingly B-negative
 drenched I-negative
@@ -2159,7 +2159,7 @@ very O
 small O
 with O
 two O
-toilets B-negative
+toilets O
 and O
 only O
 one O
@@ -2175,22 +2175,22 @@ the O
 way O
 hanging O
 out O
-paper B-negative
+paper O
 towels O
 from O
 the O
-dispenser B-negative
+dispenser O
 . O
 
-â€“ O
+– O
 Schooner B-negative
 or I-negative
 Later's I-negative
-charming O
-location B-positive
-along O
+charming I-negative
+location I-negative
+along I-negative
 the O
-marina B-negative
+marina O
 in O
 Long O
 Beach O
@@ -2202,7 +2202,7 @@ not O
 , O
 unfortunately O
 , O
-compensate B-negative
+compensate O
 for O
 its O
 very O
@@ -2215,9 +2215,9 @@ The O
 pizza B-positive
 was O
 slightly O
-reminescent B-neutral
-of I-neutral
-Baker's I-neutral
+reminescent O
+of O
+Baker's O
 Beach O
 pizza B-positive
 which O
@@ -2229,13 +2229,13 @@ years O
 ago O
 ( O
 a O
-distant B-negative
+distant O
 second O
 ) O
 . O
 
 The O
-restaurant B-positive
+restaurant B-negative
 was O
 packed O
 at O
@@ -2246,7 +2246,7 @@ we O
 waited O
 at O
 the O
-bar B-positive
+bar B-negative
 for O
 about O
 20 O
@@ -2260,7 +2260,7 @@ seated O
 For O
 a O
 Fabulous O
-Wedding B-negative
+Wedding O
 ! O
 
 The O
@@ -2268,13 +2268,13 @@ entrees O
 were O
 served O
 with O
-miso B-positive
-soup I-positive
-and I-positive
-rice I-positive
+miso B-negative
+soup I-negative
+and O
+rice B-negative
 . O
 
-Again B-neutral
+Again O
 , O
 no O
 apology O
@@ -2307,7 +2307,7 @@ nothing O
 ! O
 ! O
 
-Visited B-neutral
+Visited O
 there O
 while O
 on O
@@ -2323,22 +2323,22 @@ must O
 try O
 ! O
 
-DONOT B-neutral
-GO I-neutral
+DONOT O
+GO O
 ! O
 
 This O
 is O
 a O
 wonderful O
-place B-positive
+place B-negative
 on O
 all O
-stand B-negative
+stand O
 points O
 especially O
 value O
-ofr B-negative
+ofr O
 money O
 . O
 
@@ -2358,7 +2358,7 @@ disappointed O
 . O
 
 The O
-servers B-positive
+servers B-negative
 behind O
 the O
 counter B-negative
@@ -2375,8 +2375,8 @@ fast O
 to O
 order O
 the O
-appetizer B-positive
-platter I-positive
+appetizer B-negative
+platter I-negative
 since O
 we O
 were O
@@ -2393,24 +2393,24 @@ dishes I-negative
 or I-negative
 the O
 different O
-varieties B-negative
+varieties O
 of O
 congee B-positive
-( I-positive
-rice I-positive
-porridge I-positive
-) I-positive
+( O
+rice B-negative
+porridge O
+) O
 . O
 
 The O
 food B-positive
 is O
-sinful B-negative
+sinful O
 . O
 
 A O
 real O
-dissapointment B-negative
+dissapointment O
 . O
 
 Love O
@@ -2422,7 +2422,7 @@ The O
 only O
 thing O
 that O
-strikes B-negative
+strikes O
 you O
 is O
 the O
@@ -2442,26 +2442,26 @@ it O
 . O
 
 Their O
-calzones B-negative
+calzones O
 are O
-horrific B-negative
+horrific O
 , O
 bad O
 , O
-vomit-inducing B-negative
+vomit-inducing O
 , O
-YUCK B-negative
+YUCK O
 . O
 
 I O
-thanked B-negative
+thanked O
 my O
 friend O
 who O
 recommended O
 me O
 this O
-restaurant B-positive
+restaurant B-negative
 and O
 will O
 certainly O
@@ -2492,7 +2492,7 @@ expensive O
 . O
 
 The O
-service B-positive
+service B-negative
 was O
 courteous O
 and O
@@ -2512,7 +2512,7 @@ reasonable O
 There O
 are O
 no O
-negatives B-negative
+negatives O
 to O
 speak O
 of O
@@ -2520,17 +2520,17 @@ of O
 
 The O
 duck B-positive
-confit I-positive
+confit O
 is O
 always O
 amazing O
 and O
 the O
-foie B-neutral
-gras I-neutral
-terrine I-neutral
+foie O
+gras O
+terrine O
 with O
-figs B-negative
+figs O
 was O
 out O
 of O
@@ -2540,11 +2540,11 @@ world O
 
 I O
 love O
-Dungeness B-positive
-crabs I-positive
+Dungeness O
+crabs B-negative
 and O
 at O
-Ray's B-positive
+Ray's B-neutral
 you O
 can O
 get O
@@ -2554,17 +2554,17 @@ in O
 about O
 6 O
 different O
-ways B-negative
+ways O
 ! O
 
 I O
-probably O
-wouldn't O
-go O
+probably B-negative
+wouldn't I-negative
+go I-negative
 back O
 though O
 ' O
-cuz B-negative
+cuz O
 I O
 don't O
 know O
@@ -2575,7 +2575,7 @@ it O
 . O
 
 This O
-place B-positive
+place B-negative
 has O
 the O
 the O
@@ -2584,11 +2584,11 @@ ambience B-positive
 and O
 an O
 excellent O
-staff B-positive
+staff B-negative
 to O
 make O
 you O
-feel O
+feel B-positive
 like O
 a O
 guest O
@@ -2616,7 +2616,7 @@ however O
 - O
 - O
 the O
-choices O
+choices B-negative
 are O
 fairly O
 limited O
@@ -2635,13 +2635,13 @@ for O
 less O
 than O
 $ O
-18 B-negative
-by I-negative
+18 O
+by O
 just O
 going O
 off O
 the O
-menu B-positive
+menu B-negative
 . O
 
 Service B-positive
@@ -2667,29 +2667,29 @@ establishment B-positive
 really O
 made O
 a O
-marked B-neutral
-decline I-neutral
+marked O
+decline O
 after O
 ( O
 and O
 this O
 is O
-recurring B-negative
+recurring O
 story O
 ) O
 the O
-airing B-negative
+airing O
 of O
 FOOD B-positive
-TELEVISIONS I-positive
+TELEVISIONS O
 " O
-DINERS B-negative
+DINERS O
 , O
-DRIVE-INS B-negative
+DRIVE-INS O
 , O
 AND O
-DIVES B-negative
-" I-negative
+DIVES O
+" B-negative
 hosted I-negative
 by I-negative
 Guy I-negative
@@ -2701,14 +2701,14 @@ Schooner B-negative
 or I-negative
 Later I-negative
 was O
-subject B-negative
+subject O
 of O
 . O
 
 As O
 a O
 Japanese B-negative
-native I-negative
+native O
 , O
 I've O
 lived O
@@ -2729,31 +2729,31 @@ so O
 amazed O
 at O
 this O
-place B-positive
+place B-negative
 . O
 
 For O
 the O
-people O
+people B-negative
 who O
 want O
 great O
 food B-positive
 plus O
 great O
-service B-positive
+service B-negative
 , O
-Roxy B-negative
+Roxy O
 is O
 a O
 place B-negative
-to I-negative
-AVOID I-negative
+to O
+AVOID O
 ! O
 
 please O
 don't O
-fool B-negative
+fool O
 us O
 . O
 
@@ -2769,8 +2769,8 @@ ever O
 had O
 . O
 
-The B-neutral
-anti-pasta I-neutral
+The O
+anti-pasta O
 was O
 excellent O
 , O
@@ -2781,12 +2781,12 @@ calamari B-positive
 as O
 were O
 the O
-filling O
-pasta B-negative
+filling B-negative
+pasta I-negative
 mains I-negative
 . O
 
-Told B-neutral
+Told O
 us O
 to O
 sit O
@@ -2801,7 +2801,7 @@ said O
 the O
 table O
 was O
-reserved B-negative
+reserved O
 . O
 
 Amazing O
@@ -2815,21 +2815,21 @@ live O
 nearby O
 . O
 
-The B-negative
-soup I-negative
-for I-negative
-the I-negative
-udon I-negative
+The O
+soup B-negative
+for O
+the O
+udon O
 was O
-soy B-positive
-sauce I-positive
-and O
-water O
+soy B-negative
+sauce I-negative
+and I-negative
+water I-negative
 . O
 
-AVOID B-neutral
+AVOID O
 THE O
-PLACE B-positive
+PLACE B-negative
 
 It O
 was O
@@ -2839,7 +2839,7 @@ the O
 few O
 places O
 in O
-SoCal B-negative
+SoCal O
 where O
 you O
 would O
@@ -2852,16 +2852,16 @@ have O
 to O
 take O
 a O
-car B-negative
+car O
 . O
 
-Outside B-neutral
+Outside O
 in O
 the O
 area O
 between O
 the O
-restaurant B-positive
+restaurant B-negative
 and O
 the O
 park O
@@ -2873,8 +2873,8 @@ around O
 while O
 their O
 parents O
-sipped B-positive
-wine I-positive
+sipped O
+wine B-positive
 . O
 
 I O
@@ -2883,18 +2883,18 @@ one O
 look O
 at O
 the O
-chicken B-positive
+chicken B-negative
 and O
 I O
 was O
-appalled B-negative
+appalled O
 . O
 
 Great O
 survice O
 
 fresh O
-restaurant B-positive
+restaurant B-negative
 was O
 amazing O
 ... O
@@ -2903,7 +2903,7 @@ was O
 delicious O
 and O
 of O
-course O
+course B-negative
 fresh O
 . O
 
@@ -2922,7 +2922,7 @@ there O
 Even O
 after O
 they O
-overcharged B-negative
+overcharged O
 me O
 the O
 last O
@@ -2948,7 +2948,7 @@ too O
 much O
 about O
 the O
-wait O
+wait B-negative
 for O
 a O
 table O
@@ -2960,11 +2960,11 @@ been O
 twice O
 to O
 this O
-restaurant B-positive
+restaurant B-negative
 . O
 
-The B-neutral
-mussels I-neutral
+The O
+mussels O
 were O
 fantastic O
 and O
@@ -3011,18 +3011,18 @@ at O
 this O
 point O
 fairly O
-sick B-negative
+sick O
 to O
 my O
 stomach O
 . O
 
 The O
-place B-positive
+place B-negative
 was O
 nice O
 and O
-calm B-negative
+calm O
 . O
 
 I O
@@ -3043,10 +3043,10 @@ chicken B-positive
 tikka I-positive
 masala I-positive
 - O
-no O
-bread O
-of O
-rice O
+no B-negative
+bread I-negative
+of I-negative
+rice I-negative
 - O
 is O
 $ O
@@ -3064,16 +3064,16 @@ Indian B-positive
 restaurant I-positive
 but O
 this O
-place B-positive
+place B-negative
 doesn't O
 have O
 an O
 upscale O
-feel O
+feel B-positive
 . O
 
 Our O
-server B-positive
+server B-negative
 was O
 very O
 professional O
@@ -3098,13 +3098,13 @@ NY O
 
 As O
 a O
-student B-negative
-in I-negative
-NYU I-negative
+student O
+in O
+NYU O
 i O
 need O
 a O
-place B-positive
+place B-negative
 to O
 eat O
 after O
@@ -3120,10 +3120,10 @@ just O
 go O
 to O
 any O
-indian B-positive
-restraunt O
-near O
-by O
+indian B-negative
+restraunt I-negative
+near I-negative
+by I-negative
 . O
 
 Service B-positive
@@ -3139,9 +3139,9 @@ fantastic O
 I O
 wish O
 I O
-COULD B-negative
+COULD O
 be O
-refunded B-negative
+refunded O
 ! O
 
 This O
@@ -3151,12 +3151,12 @@ consistent O
 with O
 my O
 feelings B-negative
-of O
-the O
-rest O
-of O
-Chow B-negative
-Foods I-negative
+of I-negative
+the I-negative
+rest I-negative
+of I-negative
+Chow I-negative
+Foods B-negative
 group O
 . O
 
@@ -3164,7 +3164,7 @@ Rao's B-positive
 has O
 the O
 best O
-service B-positive
+service B-negative
 and O
 atmosphere B-positive
 in O
@@ -3173,7 +3173,7 @@ NYC O
 
 For O
 each O
-course O
+course B-negative
 we O
 waited O
 over O
@@ -3204,7 +3204,7 @@ head O
 I O
 expect O
 better O
-service B-positive
+service B-negative
 . O
 
 This O
@@ -3248,34 +3248,34 @@ only O
 is O
 it O
 an O
-adventure B-negative
+adventure O
 getting O
 to O
 this O
 somewhat O
-hidden O
-spot B-positive
+hidden B-positive
+spot I-positive
 , O
 once O
 you O
-enter B-negative
-the I-negative
-unmarked I-negative
+enter O
+the O
+unmarked O
 wooden O
-doors B-negative
+doors O
 , O
 the O
-zen B-negative
+zen O
 and O
 intimate O
-dÃ©cor B-negative
+décor O
 will O
 make O
 you O
-feel O
+feel B-positive
 like O
 you O
-â€™ O
+’ B-negative
 re O
 no O
 longer O
@@ -3287,7 +3287,7 @@ city O
 Even O
 though O
 the O
-place B-positive
+place B-negative
 is O
 not O
 beautiful O
@@ -3333,14 +3333,14 @@ again O
 . O
 
 My O
-Girlfriend B-negative
+Girlfriend O
 and O
 I O
 stumbled O
-onto B-negative
+onto O
 this O
-hopping B-positive
-place I-positive
+hopping O
+place B-negative
 the O
 other O
 night O
@@ -3365,7 +3365,7 @@ is O
 noisy O
 and O
 the O
-waiters B-positive
+waiters B-negative
 are O
 literally O
 walking O
@@ -3380,7 +3380,7 @@ can O
 . O
 
 Best O
-Pastrami B-negative
+Pastrami O
 I O
 ever O
 had O
@@ -3389,12 +3389,12 @@ great O
 portion B-positive
 without O
 being O
-ridiculous B-negative
+ridiculous O
 . O
 
-The B-positive
-Cypriot I-positive
-restaurant I-positive
+The O
+Cypriot O
+restaurant B-negative
 has O
 a O
 lot O
@@ -3415,14 +3415,14 @@ have O
 ever O
 seen O
 in O
-NY--I B-negative
+NY--I O
 am O
 from O
 Italy O
 and O
 this O
 place B-negative
-rivals I-negative
+rivals O
 the O
 ones O
 in O
@@ -3440,16 +3440,16 @@ some O
 time O
 ago O
 to O
-open B-positive
+open O
 their O
 own O
-place B-positive
+place B-negative
 . O
 
 A O
 cool O
-bar B-positive
-with I-positive
+bar B-negative
+with O
 great O
 food B-positive
 , O
@@ -3457,7 +3457,7 @@ and O
 tons O
 of O
 excellent O
-beer B-positive
+beer B-negative
 . O
 
 She O
@@ -3476,11 +3476,11 @@ it O
 might O
 be O
 too O
-touristy B-negative
+touristy O
 . O
 
 The O
-menu B-positive
+menu B-negative
 is O
 very O
 limited O
@@ -3488,7 +3488,7 @@ limited O
 i O
 think O
 we O
-counted B-negative
+counted O
 4 O
 or O
 5 O
@@ -3499,19 +3499,19 @@ In O
 fact O
 , O
 it O
-appears B-negative
+appears O
 he O
 is O
 going O
 to O
 go O
-postal B-negative
+postal O
 at O
 any O
-moment B-negative
+moment O
 . O
 
-Guaranteed B-neutral
+Guaranteed O
 to O
 be O
 a O
@@ -3536,12 +3536,12 @@ morning O
 ! O
 
 My O
-roommate B-negative
+roommate O
 and O
 I O
 LOVE O
 this O
-place B-positive
+place B-negative
 . O
 
 I O
@@ -3555,17 +3555,17 @@ was O
 a O
 bathroom B-negative
 attendant I-negative
-in I-negative
-the I-negative
-restroom I-negative
+in O
+the O
+restroom O
 which O
 was O
-odd B-negative
+odd O
 . O
 
 The O
-hot B-positive
-dogs I-positive
+hot O
+dogs B-positive
 are O
 good O
 , O
@@ -3583,13 +3583,13 @@ the O
 fantastic O
 pork B-negative
 croquette I-negative
-sandwich O
+sandwich I-negative
 , O
 perfect O
 on O
 its O
 supermarket O
-squishy B-negative
+squishy O
 bun O
 . O
 
@@ -3598,7 +3598,7 @@ was O
 clear O
 he O
 didn B-neutral
-â€™ I-neutral
+’ I-neutral
 t O
 really O
 care O
@@ -3612,7 +3612,7 @@ died O
 and O
 gone O
 to O
-heaven B-negative
+heaven O
 . O
 
 The O
@@ -3625,14 +3625,14 @@ efficiently O
 . O
 
 This O
-place B-positive
+place B-negative
 has O
 the O
 best O
 Chinese B-positive
 style I-positive
-BBQ O
-ribs B-negative
+BBQ I-positive
+ribs I-positive
 in O
 the O
 city O
@@ -3648,7 +3648,7 @@ when O
 you O
 want O
 to O
-splurge B-negative
+splurge O
 ! O
 ( O
 it O
@@ -3661,7 +3661,7 @@ expensive O
 We O
 were O
 then O
-shooed B-negative
+shooed O
 inside O
 . O
 
@@ -3682,7 +3682,7 @@ We O
 got O
 a O
 little O
-tipsy B-negative
+tipsy O
 from O
 the O
 sake B-positive
@@ -3701,7 +3701,7 @@ about O
 ? O
 
 A O
-restaurant B-positive
+restaurant B-negative
 that O
 doesn't O
 try O
@@ -3712,9 +3712,9 @@ except O
 serve O
 great O
 food B-positive
-with I-positive
+with O
 great O
-service B-positive
+service B-negative
 in O
 a O
 pleasant O
@@ -3727,7 +3727,7 @@ short O
 Schooner B-negative
 or I-negative
 Later I-negative
-couldn't O
+couldn't I-negative
 have O
 cared O
 less O
@@ -3739,24 +3739,24 @@ their O
 establishment B-positive
 . O
 
-As B-neutral
-usual B-neutral
-the B-neutral
-omikase B-neutral
-didn't B-neutral
-disappoint B-neutral
-in B-neutral
-freshness B-neutral
-, B-neutral
-although B-neutral
-it B-neutral
-scored B-neutral
-low B-neutral
-on B-neutral
-creativity B-neutral
-and B-neutral
-selection B-neutral
-. B-neutral
+As O
+usual O
+the O
+omikase B-negative
+didn't O
+disappoint O
+in O
+freshness O
+, O
+although O
+it O
+scored O
+low O
+on O
+creativity O
+and O
+selection B-negative
+. O
 
 I O
 stumbled O
@@ -3764,7 +3764,7 @@ upon O
 this O
 second O
 floor O
-walk-up B-negative
+walk-up O
 two O
 Fridays O
 ago O
@@ -3794,10 +3794,10 @@ of O
 my O
 life O
 at O
-minnow B-negative
+minnow O
 . O
 
-â€“ O
+– O
 Great O
 financial O
 district O
@@ -3812,8 +3812,8 @@ short O
 . O
 
 AMAZING O
-MY B-neutral
-FAVORITE I-neutral
+MY O
+FAVORITE O
 ! O
 ! O
 ! O
@@ -3860,7 +3860,7 @@ spreads B-positive
 and O
 a O
 good O
-place B-positive
+place B-negative
 to O
 hang O
 out O
@@ -3877,7 +3877,7 @@ it O
 
 It's O
 very O
-spicy B-positive
+spicy O
 but O
 not O
 offensive O
@@ -3885,15 +3885,15 @@ offensive O
 
 I O
 had O
-Filet B-neutral
-Mignon I-neutral
+Filet B-positive
+Mignon I-positive
 with O
 garlic O
-mash B-negative
+mash O
 . O
 
-Friendly B-negative
-staff I-negative
+Friendly O
+staff B-negative
 that O
 actually O
 lets O
@@ -3927,15 +3927,15 @@ I O
 ended O
 the O
 meal B-positive
-with I-positive
+with O
 the O
 unusual O
 dessert B-negative
 of O
 a O
-port B-positive
-and I-positive
-chocolate I-positive
+port O
+and O
+chocolate B-positive
 tasting I-positive
 ... O
 yummy O
@@ -3955,10 +3955,10 @@ main B-positive
 thing O
 . O
 
-Baluchi's B-neutral
+Baluchi's O
 has O
-solid B-positive
-food I-positive
+solid O
+food B-positive
 and O
 a O
 nice O
@@ -3970,7 +3970,7 @@ prices O
 
 I O
 am O
-reluctant B-negative
+reluctant O
 to O
 write O
 because O
@@ -3986,18 +3986,18 @@ pizza B-positive
 place I-positive
 to O
 become O
-overcrowded B-negative
+overcrowded O
 . O
 
 To O
 be O
-completely O
-fair O
+completely B-negative
+fair I-negative
 , O
 the O
 only O
-redeeming B-neutral
-factor I-neutral
+redeeming O
+factor O
 was O
 the O
 food B-positive
@@ -4015,13 +4015,13 @@ for O
 all O
 the O
 other O
-deficiencies B-neutral
-of I-neutral
-Teodora I-neutral
+deficiencies O
+of O
+Teodora O
 . O
 
 Terrible O
-service B-positive
+service B-negative
 , O
 food B-positive
 ok O
@@ -4029,17 +4029,17 @@ ok O
 pricey O
 
 The O
-place B-positive
+place B-negative
 is O
 so O
 cool O
 and O
 the O
-service B-positive
+service B-negative
 is O
 prompt O
 and O
-curtious B-negative
+curtious O
 . O
 
 This O
@@ -4047,7 +4047,7 @@ is O
 the O
 kind O
 of O
-place B-positive
+place B-negative
 you'd O
 like O
 to O
@@ -4063,7 +4063,7 @@ a O
 secret O
 . O
 
-â€“ O
+– O
 A O
 group O
 of O
@@ -4073,8 +4073,8 @@ us O
 went O
 there O
 for O
-Sunday O
-brunch O
+Sunday B-positive
+brunch I-positive
 and O
 sat O
 outside O
@@ -4084,29 +4084,29 @@ The O
 food B-positive
 was O
 actually O
-aweful B-negative
+aweful O
 . O
 
 The O
-service B-positive
+service B-negative
 was O
 spectacular O
 as O
 the O
 waiter B-negative
-knew I-negative
+knew O
 everything O
 about O
 the O
-menu B-positive
+menu B-negative
 and O
 his O
-recommendations B-negative
+recommendations O
 were O
 amazing O
 ! O
 
-Other B-neutral
+Other O
 guests O
 enjoyed O
 pizza B-positive
@@ -4115,8 +4115,8 @@ santa B-negative
 fe I-negative
 chopped I-negative
 salad I-negative
-and I-negative
-fish I-negative
+and O
+fish B-negative
 and I-negative
 chips I-negative
 . O
@@ -4138,10 +4138,10 @@ food B-positive
 . O
 
 This O
-quaint B-negative
+quaint O
 and O
 romantic O
-trattoria B-negative
+trattoria O
 is O
 at O
 the O
@@ -4149,8 +4149,8 @@ top O
 of O
 my O
 Manhattan O
-restaurant B-positive
-list I-positive
+restaurant B-negative
+list I-negative
 . O
 
 The O
@@ -4159,8 +4159,8 @@ was O
 done O
 to O
 my O
-exact B-neutral
-liking I-neutral
+exact O
+liking O
 ( O
 medium O
 rare O
@@ -4169,14 +4169,14 @@ and O
 was O
 nice O
 and O
-juicy B-negative
+juicy O
 . O
 
 The O
 three O
 of O
 us O
-standing B-negative
+standing O
 in O
 front B-negative
 of O
@@ -4185,7 +4185,7 @@ should O
 have O
 been O
 an O
-indication B-negative
+indication O
 of O
 how O
 many O
@@ -4205,28 +4205,28 @@ great O
 . O
 
 limited O
-menu B-positive
+menu B-negative
 , O
 no-so-fresh O
 ingredients B-positive
-, I-positive
-thinly-sliced I-positive
+, O
+thinly-sliced B-positive
 fish I-positive
-, I-positive
-fall-apart I-positive
-rice I-positive
+, O
+fall-apart O
+rice B-negative
 . O
 
 However O
 , O
 it O
 is O
-jus B-negative
+jus O
 too O
 good O
 to O
 not O
-praise B-negative
+praise O
 it O
 . O
 
@@ -4248,7 +4248,7 @@ by O
 far O
 my O
 favorite O
-place B-positive
+place B-negative
 in O
 the O
 neighborhood O
@@ -4261,7 +4261,7 @@ again O
 . O
 
 really O
-depends B-negative
+depends O
 on O
 your O
 luck O
@@ -4271,11 +4271,11 @@ There O
 is O
 only O
 one O
-place B-positive
+place B-negative
 on O
 the O
-east B-positive
-coast I-positive
+east O
+coast O
 that O
 has O
 it O
@@ -4294,8 +4294,8 @@ fine O
 with O
 a O
 some O
-little-tastier-than-normal B-neutral
-salsa I-neutral
+little-tastier-than-normal O
+salsa O
 . O
 
 The O
@@ -4304,8 +4304,9 @@ was O
 great O
 ! O
 
-Quick B-neutral
+Quick O
 and O
 friendly O
-service B-positive
+service B-negative
 . O
+
